@@ -1,0 +1,14 @@
+---
+version: '3.9'
+services:
+  games:
+    build:
+      context: ./
+      dockerfile: dev/docker/services/php/Dockerfile
+      target: app
+      args:
+        GITHUB_TOKEN: "${GITHUB_TOKEN?err}"
+    environment:
+      GITHUB_TOKEN: "${GITHUB_TOKEN?err}"
+    volumes:
+      - ./:/RPHaven/

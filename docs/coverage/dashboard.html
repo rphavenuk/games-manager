@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /RPHaven/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=10.1.11" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=10.1.11" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=10.1.11" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/RPHaven/src</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Api/Console/Action/ActiveGames.php.html#15">Api\Console\Action\ActiveGames</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Console/Action/ActiveGames/ActiveBranchGames.php.html#12">Api\Console\Action\ActiveGames\ActiveBranchGames</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Console/Action/ActiveGames/ActiveGamesFormatter.php.html#11">Api\Console\Action\ActiveGames\ActiveGamesFormatter</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Http/Action/ActiveGames.php.html#14">Api\Http\Action\ActiveGames</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Http/Action/ActiveGames/RequestActiveBranchGamesQueryFactory.php.html#13">Api\Http\Action\ActiveGames\RequestActiveBranchGamesQueryFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/Query/Exception/ActiveBranchesCannotBeEmpty.php.html#9">App\Query\Exception\ActiveBranchesCannotBeEmpty</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/Query/Handler/ActiveBranchGames.php.html#10">App\Query\Handler\ActiveBranchGames</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/Query/QueryActiveBranchGames.php.html#13">App\Query\QueryActiveBranchGames</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Attendee/Pronouns.php.html#10">RpHaven\Games\Attendee\Pronouns</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch.php.html#12">RpHaven\Games\Branch</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates/Latitude.php.html#15">RpHaven\Games\Branch\Space\Venue\Coordinates\Latitude</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates/Longitude.php.html#15">RpHaven\Games\Branch\Space\Venue\Coordinates\Longitude</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Virtual.php.html#9">RpHaven\Games\Branch\Space\Virtual</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game.php.html#12">RpHaven\Games\Game</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#12">RpHaven\Games\Game\Campaign</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party.php.html#15">RpHaven\Games\Game\Party</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Exception/DuplicateParticipant.php.html#10">RpHaven\Games\Game\Party\Exception\DuplicateParticipant</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Exception/PartyHasNoGamesMaster.php.html#10">RpHaven\Games\Game\Party\Exception\PartyHasNoGamesMaster</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Participant/Player.php.html#13">RpHaven\Games\Game\Party\Participant\Player</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Session.php.html#11">RpHaven\Games\Game\Session</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/System.php.html#9">RpHaven\Games\Game\System</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Meet/Duration/Exception/StartDateTimeCannotBeAfterEndDateTime.php.html#10">RpHaven\Games\Meet\Duration\Exception\StartDateTimeCannotBeAfterEndDateTime</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/System/Exception/SystemNameCannotBeEmpty.php.html#9">RpHaven\Games\System\Exception\SystemNameCannotBeEmpty</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/CommandBus/SymfonyCommandBus.php.html#14">Infra\CommandBus\SymfonyCommandBus</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Factory/CampaignFactory.php.html#12">Infra\Factory\CampaignFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Factory/GameFactory.php.html#13">Infra\Factory\GameFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Meet/MeetPeriod.php.html#14">Infra\Meet\MeetPeriod</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/QueryBus/SymfonyQueryBus.php.html#13">Infra\QueryBus\SymfonyQueryBus</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates/Traits/CoordinateStringTrait.php.html#9">RpHaven\Games\Branch\Space\Venue\Coordinates\Traits\CoordinateStringTrait</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates/Traits/DegreesTrait.php.html#9">RpHaven\Games\Branch\Space\Venue\Coordinates\Traits\DegreesTrait</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Meet/Duration.php.html#9">RpHaven\Games\Meet\Duration</a></td><td class="text-right">22%</td></tr>
+       <tr><td><a href="Games/Attendee/Member.php.html#11">RpHaven\Games\Attendee\Member</a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue.php.html#12">RpHaven\Games\Branch\Space\Venue</a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="Games/Table.php.html#17">RpHaven\Games\Table</a></td><td class="text-right">35%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates.php.html#13">RpHaven\Games\Branch\Space\Venue\Coordinates</a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Games/Game/Party/Participant/GamesMaster.php.html#12">RpHaven\Games\Game\Party\Participant\GamesMaster</a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Traits/MeetSeries.php.html#14">RpHaven\Games\Branch\Space\Traits\MeetSeries</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Games/Attendee/Traits/AttendeeName.php.html#9">RpHaven\Games\Attendee\Traits\AttendeeName</a></td><td class="text-right">75%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Games/Game/Party.php.html#15">RpHaven\Games\Game\Party</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#12">RpHaven\Games\Game\Campaign</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Games/Table.php.html#17">RpHaven\Games\Table</a></td><td class="text-right">43</td></tr>
+       <tr><td><a href="Api/Http/Action/ActiveGames/RequestActiveBranchGamesQueryFactory.php.html#13">Api\Http\Action\ActiveGames\RequestActiveBranchGamesQueryFactory</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Games/Meet/Duration.php.html#9">RpHaven\Games\Meet\Duration</a></td><td class="text-right">37</td></tr>
+       <tr><td><a href="Games/Attendee/Pronouns.php.html#10">RpHaven\Games\Attendee\Pronouns</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Infra/Meet/MeetPeriod.php.html#14">Infra\Meet\MeetPeriod</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="App/Query/QueryActiveBranchGames.php.html#13">App\Query\QueryActiveBranchGames</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Infra/Factory/CampaignFactory.php.html#12">Infra\Factory\CampaignFactory</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Games/Game/System.php.html#9">RpHaven\Games\Game\System</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Infra/Factory/GameFactory.php.html#13">Infra\Factory\GameFactory</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Games/Attendee/Member.php.html#11">RpHaven\Games\Attendee\Member</a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Games/Attendee/Traits/AttendeeName.php.html#9">RpHaven\Games\Attendee\Traits\AttendeeName</a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Api/Console/Action/ActiveGames.php.html#21"><abbr title="Api\Console\Action\ActiveGames::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Console/Action/ActiveGames.php.html#30"><abbr title="Api\Console\Action\ActiveGames::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Console/Action/ActiveGames/ActiveBranchGames.php.html#15"><abbr title="Api\Console\Action\ActiveGames\ActiveBranchGames::build">build</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Console/Action/ActiveGames/ActiveGamesFormatter.php.html#14"><abbr title="Api\Console\Action\ActiveGames\ActiveGamesFormatter::format">format</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Http/Action/ActiveGames.php.html#16"><abbr title="Api\Http\Action\ActiveGames::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Http/Action/ActiveGames.php.html#24"><abbr title="Api\Http\Action\ActiveGames::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Http/Action/ActiveGames/RequestActiveBranchGamesQueryFactory.php.html#16"><abbr title="Api\Http\Action\ActiveGames\RequestActiveBranchGamesQueryFactory::build">build</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Http/Action/ActiveGames/RequestActiveBranchGamesQueryFactory.php.html#23"><abbr title="Api\Http\Action\ActiveGames\RequestActiveBranchGamesQueryFactory::getQueryDate">getQueryDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Api/Http/Action/ActiveGames/RequestActiveBranchGamesQueryFactory.php.html#32"><abbr title="Api\Http\Action\ActiveGames\RequestActiveBranchGamesQueryFactory::getQueryBranches">getQueryBranches</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/Query/Exception/ActiveBranchesCannotBeEmpty.php.html#11"><abbr title="App\Query\Exception\ActiveBranchesCannotBeEmpty::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/Query/Handler/ActiveBranchGames.php.html#12"><abbr title="App\Query\Handler\ActiveBranchGames::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/Query/QueryActiveBranchGames.php.html#16"><abbr title="App\Query\QueryActiveBranchGames::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/Query/QueryActiveBranchGames.php.html#29"><abbr title="App\Query\QueryActiveBranchGames::branches">branches</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Attendee/Member.php.html#23"><abbr title="RpHaven\Games\Attendee\Member::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Attendee/Pronouns.php.html#16"><abbr title="RpHaven\Games\Attendee\Pronouns::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Attendee/Pronouns.php.html#31"><abbr title="RpHaven\Games\Attendee\Pronouns::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Attendee/Pronouns.php.html#36"><abbr title="RpHaven\Games\Attendee\Pronouns::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch.php.html#16"><abbr title="RpHaven\Games\Branch::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch.php.html#21"><abbr title="RpHaven\Games\Branch::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch.php.html#28"><abbr title="RpHaven\Games\Branch::tables">tables</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch.php.html#33"><abbr title="RpHaven\Games\Branch::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch.php.html#41"><abbr title="RpHaven\Games\Branch::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch.php.html#46"><abbr title="RpHaven\Games\Branch::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue.php.html#24"><abbr title="RpHaven\Games\Branch\Space\Venue::matches">matches</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue.php.html#29"><abbr title="RpHaven\Games\Branch\Space\Venue::jsonSerialize">jsonSerialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue.php.html#38"><abbr title="RpHaven\Games\Branch\Space\Venue::space">space</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates.php.html#29"><abbr title="RpHaven\Games\Branch\Space\Venue\Coordinates::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates.php.html#38"><abbr title="RpHaven\Games\Branch\Space\Venue\Coordinates::matches">matches</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates.php.html#43"><abbr title="RpHaven\Games\Branch\Space\Venue\Coordinates::jsonSerialize">jsonSerialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates/Latitude.php.html#22"><abbr title="RpHaven\Games\Branch\Space\Venue\Coordinates\Latitude::jsonSerialize">jsonSerialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates/Latitude.php.html#26"><abbr title="RpHaven\Games\Branch\Space\Venue\Coordinates\Latitude::coordinate">coordinate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates/Longitude.php.html#22"><abbr title="RpHaven\Games\Branch\Space\Venue\Coordinates\Longitude::jsonSerialize">jsonSerialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates/Longitude.php.html#26"><abbr title="RpHaven\Games\Branch\Space\Venue\Coordinates\Longitude::coordinate">coordinate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Virtual.php.html#11"><abbr title="RpHaven\Games\Branch\Space\Virtual::jsonSerialize">jsonSerialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game.php.html#14"><abbr title="RpHaven\Games\Game::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game.php.html#22"><abbr title="RpHaven\Games\Game::firstSession">firstSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game.php.html#27"><abbr title="RpHaven\Games\Game::lastSession">lastSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#15"><abbr title="RpHaven\Games\Game\Campaign::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#25"><abbr title="RpHaven\Games\Game\Campaign::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#30"><abbr title="RpHaven\Games\Game\Campaign::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#38"><abbr title="RpHaven\Games\Game\Campaign::sessions">sessions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#45"><abbr title="RpHaven\Games\Game\Campaign::start">start</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#50"><abbr title="RpHaven\Games\Game\Campaign::end">end</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#55"><abbr title="RpHaven\Games\Game\Campaign::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#60"><abbr title="RpHaven\Games\Game\Campaign::sort">sort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party.php.html#18"><abbr title="RpHaven\Games\Game\Party::form">form</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party.php.html#23"><abbr title="RpHaven\Games\Game\Party::formPartyFromParticipants">formPartyFromParticipants</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party.php.html#37"><abbr title="RpHaven\Games\Game\Party::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party.php.html#43"><abbr title="RpHaven\Games\Game\Party::players">players</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party.php.html#50"><abbr title="RpHaven\Games\Game\Party::gamesMasters">gamesMasters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party.php.html#57"><abbr title="RpHaven\Games\Game\Party::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party.php.html#62"><abbr title="RpHaven\Games\Game\Party::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party.php.html#70"><abbr title="RpHaven\Games\Game\Party::assertValidParty">assertValidParty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Exception/DuplicateParticipant.php.html#12"><abbr title="RpHaven\Games\Game\Party\Exception\DuplicateParticipant::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Exception/PartyHasNoGamesMaster.php.html#12"><abbr title="RpHaven\Games\Game\Party\Exception\PartyHasNoGamesMaster::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Participant/GamesMaster.php.html#25"><abbr title="RpHaven\Games\Game\Party\Participant\GamesMaster::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Participant/GamesMaster.php.html#30"><abbr title="RpHaven\Games\Game\Party\Participant\GamesMaster::roles">roles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Participant/GamesMaster.php.html#35"><abbr title="RpHaven\Games\Game\Party\Participant\GamesMaster::hasRole">hasRole</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Participant/Player.php.html#16"><abbr title="RpHaven\Games\Game\Party\Participant\Player::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Participant/Player.php.html#21"><abbr title="RpHaven\Games\Game\Party\Participant\Player::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Participant/Player.php.html#26"><abbr title="RpHaven\Games\Game\Party\Participant\Player::roles">roles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Party/Participant/Player.php.html#31"><abbr title="RpHaven\Games\Game\Party\Participant\Player::hasRole">hasRole</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Session.php.html#13"><abbr title="RpHaven\Games\Game\Session::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Session.php.html#20"><abbr title="RpHaven\Games\Game\Session::cancel">cancel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Session.php.html#25"><abbr title="RpHaven\Games\Game\Session::confirm">confirm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Session.php.html#30"><abbr title="RpHaven\Games\Game\Session::start">start</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Session.php.html#35"><abbr title="RpHaven\Games\Game\Session::end">end</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/Session.php.html#40"><abbr title="RpHaven\Games\Game\Session::status">status</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Game/System.php.html#11"><abbr title="RpHaven\Games\Game\System::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Meet/Duration.php.html#20"><abbr title="RpHaven\Games\Meet\Duration::start">start</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Meet/Duration.php.html#25"><abbr title="RpHaven\Games\Meet\Duration::end">end</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Meet/Duration.php.html#30"><abbr title="RpHaven\Games\Meet\Duration::diff">diff</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Meet/Duration.php.html#35"><abbr title="RpHaven\Games\Meet\Duration::intersects">intersects</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Meet/Duration/Exception/StartDateTimeCannotBeAfterEndDateTime.php.html#12"><abbr title="RpHaven\Games\Meet\Duration\Exception\StartDateTimeCannotBeAfterEndDateTime::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/System/Exception/SystemNameCannotBeEmpty.php.html#11"><abbr title="RpHaven\Games\System\Exception\SystemNameCannotBeEmpty::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Table.php.html#46"><abbr title="RpHaven\Games\Table::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Table.php.html#57"><abbr title="RpHaven\Games\Table::games">games</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Table.php.html#70"><abbr title="RpHaven\Games\Table::sort">sort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/CommandBus/SymfonyCommandBus.php.html#19"><abbr title="Infra\CommandBus\SymfonyCommandBus::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/CommandBus/SymfonyCommandBus.php.html#24"><abbr title="Infra\CommandBus\SymfonyCommandBus::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Factory/CampaignFactory.php.html#14"><abbr title="Infra\Factory\CampaignFactory::meets">meets</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Factory/CampaignFactory.php.html#19"><abbr title="Infra\Factory\CampaignFactory::createMeetSessions">createMeetSessions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Factory/GameFactory.php.html#15"><abbr title="Infra\Factory\GameFactory::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Meet/MeetPeriod.php.html#16"><abbr title="Infra\Meet\MeetPeriod::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Meet/MeetPeriod.php.html#23"><abbr title="Infra\Meet\MeetPeriod::start">start</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Meet/MeetPeriod.php.html#28"><abbr title="Infra\Meet\MeetPeriod::end">end</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Meet/MeetPeriod.php.html#33"><abbr title="Infra\Meet\MeetPeriod::repeat">repeat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/QueryBus/SymfonyQueryBus.php.html#18"><abbr title="Infra\QueryBus\SymfonyQueryBus::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/QueryBus/SymfonyQueryBus.php.html#23"><abbr title="Infra\QueryBus\SymfonyQueryBus::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Traits/MeetSeries.php.html#23"><abbr title="RpHaven\Games\Branch\Space\Traits\MeetSeries::duration">duration</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates/Traits/CoordinateStringTrait.php.html#11"><abbr title="RpHaven\Games\Branch\Space\Venue\Coordinates\Traits\CoordinateStringTrait::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Venue/Coordinates/Traits/DegreesTrait.php.html#11"><abbr title="RpHaven\Games\Branch\Space\Venue\Coordinates\Traits\DegreesTrait::degrees">degrees</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Games/Table.php.html#77"><abbr title="RpHaven\Games\Table::assertValidGames">assertValidGames</abbr></a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="Games/Meet/Duration.php.html#11"><abbr title="RpHaven\Games\Meet\Duration::__construct">__construct</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Games/Attendee/Traits/AttendeeName.php.html#11"><abbr title="RpHaven\Games\Attendee\Traits\AttendeeName::create">create</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Games/Branch/Space/Traits/MeetSeries.php.html#16"><abbr title="RpHaven\Games\Branch\Space\Traits\MeetSeries::series">series</abbr></a></td><td class="text-right">75%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Api/Http/Action/ActiveGames/RequestActiveBranchGamesQueryFactory.php.html#32"><abbr title="Api\Http\Action\ActiveGames\RequestActiveBranchGamesQueryFactory::getQueryBranches">getQueryBranches</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Games/Attendee/Pronouns.php.html#16"><abbr title="RpHaven\Games\Attendee\Pronouns::create">create</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Games/Game/Party.php.html#23"><abbr title="RpHaven\Games\Game\Party::formPartyFromParticipants">formPartyFromParticipants</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Games/Game/Party.php.html#70"><abbr title="RpHaven\Games\Game\Party::assertValidParty">assertValidParty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Games/Table.php.html#77"><abbr title="RpHaven\Games\Table::assertValidGames">assertValidGames</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Api/Http/Action/ActiveGames/RequestActiveBranchGamesQueryFactory.php.html#23"><abbr title="Api\Http\Action\ActiveGames\RequestActiveBranchGamesQueryFactory::getQueryDate">getQueryDate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="App/Query/QueryActiveBranchGames.php.html#16"><abbr title="App\Query\QueryActiveBranchGames::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Games/Attendee/Member.php.html#23"><abbr title="RpHaven\Games\Attendee\Member::toString">toString</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#15"><abbr title="RpHaven\Games\Game\Campaign::create">create</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Games/Game/Campaign.php.html#38"><abbr title="RpHaven\Games\Game\Campaign::sessions">sessions</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Games/Game/System.php.html#11"><abbr title="RpHaven\Games\Game\System::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Games/Meet/Duration.php.html#35"><abbr title="RpHaven\Games\Meet\Duration::intersects">intersects</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Games/Table.php.html#57"><abbr title="RpHaven\Games\Table::games">games</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Infra/Factory/CampaignFactory.php.html#19"><abbr title="Infra\Factory\CampaignFactory::createMeetSessions">createMeetSessions</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Infra/Factory/GameFactory.php.html#15"><abbr title="Infra\Factory\GameFactory::init">init</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Infra/Meet/MeetPeriod.php.html#33"><abbr title="Infra\Meet\MeetPeriod::repeat">repeat</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Games/Meet/Duration.php.html#11"><abbr title="RpHaven\Games\Meet\Duration::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Games/Attendee/Traits/AttendeeName.php.html#11"><abbr title="RpHaven\Games\Attendee\Traits\AttendeeName::create">create</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Games/Branch/Space/Traits/MeetSeries.php.html#16"><abbr title="RpHaven\Games\Branch\Space\Traits\MeetSeries::series">series</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 10.1.11</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.3</a> and <a href="https://phpunit.de/">PHPUnit 10.5.10</a> at Fri Feb 23 13:33:58 UTC 2024.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=10.1.11" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=10.1.11" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=10.1.11" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([30,0,0,3,1,2,0,1,1,0,0,7], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([92,0,0,1,0,0,0,1,2,0,0,19], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"Api\/Console\/Action\/ActiveGames.php.html#15\">Api\\Console\\Action\\ActiveGames<\/a>"],[0,1,"<a href=\"Api\/Console\/Action\/ActiveGames\/ActiveBranchGames.php.html#12\">Api\\Console\\Action\\ActiveGames\\ActiveBranchGames<\/a>"],[0,1,"<a href=\"Api\/Console\/Action\/ActiveGames\/ActiveGamesFormatter.php.html#11\">Api\\Console\\Action\\ActiveGames\\ActiveGamesFormatter<\/a>"],[100,0,"<a href=\"Api\/Console\/Action\/ActiveGames\/Configuration.php.html#7\">Api\\Console\\Action\\ActiveGames\\Configuration<\/a>"],[0,2,"<a href=\"Api\/Http\/Action\/ActiveGames.php.html#14\">Api\\Http\\Action\\ActiveGames<\/a>"],[0,6,"<a href=\"Api\/Http\/Action\/ActiveGames\/RequestActiveBranchGamesQueryFactory.php.html#13\">Api\\Http\\Action\\ActiveGames\\RequestActiveBranchGamesQueryFactory<\/a>"],[0,1,"<a href=\"App\/Query\/Exception\/ActiveBranchesCannotBeEmpty.php.html#9\">App\\Query\\Exception\\ActiveBranchesCannotBeEmpty<\/a>"],[0,1,"<a href=\"App\/Query\/Handler\/ActiveBranchGames.php.html#10\">App\\Query\\Handler\\ActiveBranchGames<\/a>"],[0,3,"<a href=\"App\/Query\/QueryActiveBranchGames.php.html#13\">App\\Query\\QueryActiveBranchGames<\/a>"],[100,0,"<a href=\"App\/Result\/ActiveGames.php.html#9\">App\\Result\\ActiveGames<\/a>"],[100,0,"<a href=\"Games\/Attendee\/Guest.php.html#9\">RpHaven\\Games\\Attendee\\Guest<\/a>"],[25,3,"<a href=\"Games\/Attendee\/Member.php.html#11\">RpHaven\\Games\\Attendee\\Member<\/a>"],[0,5,"<a href=\"Games\/Attendee\/Pronouns.php.html#10\">RpHaven\\Games\\Attendee\\Pronouns<\/a>"],[0,6,"<a href=\"Games\/Branch.php.html#12\">RpHaven\\Games\\Branch<\/a>"],[25,4,"<a href=\"Games\/Branch\/Space\/Venue.php.html#12\">RpHaven\\Games\\Branch\\Space\\Venue<\/a>"],[40,5,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates.php.html#13\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates<\/a>"],[0,2,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Latitude.php.html#15\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Latitude<\/a>"],[0,2,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Longitude.php.html#15\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Longitude<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Virtual.php.html#9\">RpHaven\\Games\\Branch\\Space\\Virtual<\/a>"],[0,3,"<a href=\"Games\/Game.php.html#12\">RpHaven\\Games\\Game<\/a>"],[0,10,"<a href=\"Games\/Game\/Campaign.php.html#12\">RpHaven\\Games\\Game\\Campaign<\/a>"],[0,12,"<a href=\"Games\/Game\/Party.php.html#15\">RpHaven\\Games\\Game\\Party<\/a>"],[0,1,"<a href=\"Games\/Game\/Party\/Exception\/DuplicateParticipant.php.html#10\">RpHaven\\Games\\Game\\Party\\Exception\\DuplicateParticipant<\/a>"],[0,1,"<a href=\"Games\/Game\/Party\/Exception\/PartyHasNoGamesMaster.php.html#10\">RpHaven\\Games\\Game\\Party\\Exception\\PartyHasNoGamesMaster<\/a>"],[40,5,"<a href=\"Games\/Game\/Party\/Participant\/GamesMaster.php.html#12\">RpHaven\\Games\\Game\\Party\\Participant\\GamesMaster<\/a>"],[0,4,"<a href=\"Games\/Game\/Party\/Participant\/Player.php.html#13\">RpHaven\\Games\\Game\\Party\\Participant\\Player<\/a>"],[0,6,"<a href=\"Games\/Game\/Session.php.html#11\">RpHaven\\Games\\Game\\Session<\/a>"],[0,2,"<a href=\"Games\/Game\/System.php.html#9\">RpHaven\\Games\\Game\\System<\/a>"],[22.22222222222222,7,"<a href=\"Games\/Meet\/Duration.php.html#9\">RpHaven\\Games\\Meet\\Duration<\/a>"],[0,1,"<a href=\"Games\/Meet\/Duration\/Exception\/StartDateTimeCannotBeAfterEndDateTime.php.html#10\">RpHaven\\Games\\Meet\\Duration\\Exception\\StartDateTimeCannotBeAfterEndDateTime<\/a>"],[0,1,"<a href=\"Games\/System\/Exception\/SystemNameCannotBeEmpty.php.html#9\">RpHaven\\Games\\System\\Exception\\SystemNameCannotBeEmpty<\/a>"],[35.294117647058826,11,"<a href=\"Games\/Table.php.html#17\">RpHaven\\Games\\Table<\/a>"],[0,2,"<a href=\"Infra\/CommandBus\/SymfonyCommandBus.php.html#14\">Infra\\CommandBus\\SymfonyCommandBus<\/a>"],[0,3,"<a href=\"Infra\/Factory\/CampaignFactory.php.html#12\">Infra\\Factory\\CampaignFactory<\/a>"],[0,2,"<a href=\"Infra\/Factory\/GameFactory.php.html#13\">Infra\\Factory\\GameFactory<\/a>"],[100,3,"<a href=\"Infra\/Factory\/MeetFactory.php.html#12\">Infra\\Factory\\MeetFactory<\/a>"],[100,0,"<a href=\"Infra\/Kernel.php.html#10\">Infra\\Kernel<\/a>"],[0,5,"<a href=\"Infra\/Meet\/MeetPeriod.php.html#14\">Infra\\Meet\\MeetPeriod<\/a>"],[0,2,"<a href=\"Infra\/QueryBus\/SymfonyQueryBus.php.html#13\">Infra\\QueryBus\\SymfonyQueryBus<\/a>"],[75,2,"<a href=\"Games\/Attendee\/Traits\/AttendeeName.php.html#9\">RpHaven\\Games\\Attendee\\Traits\\AttendeeName<\/a>"],[60,3,"<a href=\"Games\/Branch\/Space\/Traits\/MeetSeries.php.html#14\">RpHaven\\Games\\Branch\\Space\\Traits\\MeetSeries<\/a>"],[100,2,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Traits\/BigDecimalTrait.php.html#9\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Traits\\BigDecimalTrait<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Traits\/CoordinateStringTrait.php.html#9\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Traits\\CoordinateStringTrait<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Traits\/DegreesTrait.php.html#9\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Traits\\DegreesTrait<\/a>"],[100,1,"<a href=\"Games\/Traits\/ToString.php.html#7\">RpHaven\\Games\\Traits\\ToString<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Api\/Console\/Action\/ActiveGames.php.html#21\">Api\\Console\\Action\\ActiveGames::__construct<\/a>"],[0,1,"<a href=\"Api\/Console\/Action\/ActiveGames.php.html#30\">Api\\Console\\Action\\ActiveGames::execute<\/a>"],[0,1,"<a href=\"Api\/Console\/Action\/ActiveGames\/ActiveBranchGames.php.html#15\">Api\\Console\\Action\\ActiveGames\\ActiveBranchGames::build<\/a>"],[0,1,"<a href=\"Api\/Console\/Action\/ActiveGames\/ActiveGamesFormatter.php.html#14\">Api\\Console\\Action\\ActiveGames\\ActiveGamesFormatter::format<\/a>"],[0,1,"<a href=\"Api\/Http\/Action\/ActiveGames.php.html#16\">Api\\Http\\Action\\ActiveGames::__construct<\/a>"],[0,1,"<a href=\"Api\/Http\/Action\/ActiveGames.php.html#24\">Api\\Http\\Action\\ActiveGames::__invoke<\/a>"],[0,1,"<a href=\"Api\/Http\/Action\/ActiveGames\/RequestActiveBranchGamesQueryFactory.php.html#16\">Api\\Http\\Action\\ActiveGames\\RequestActiveBranchGamesQueryFactory::build<\/a>"],[0,2,"<a href=\"Api\/Http\/Action\/ActiveGames\/RequestActiveBranchGamesQueryFactory.php.html#23\">Api\\Http\\Action\\ActiveGames\\RequestActiveBranchGamesQueryFactory::getQueryDate<\/a>"],[0,3,"<a href=\"Api\/Http\/Action\/ActiveGames\/RequestActiveBranchGamesQueryFactory.php.html#32\">Api\\Http\\Action\\ActiveGames\\RequestActiveBranchGamesQueryFactory::getQueryBranches<\/a>"],[0,1,"<a href=\"App\/Query\/Exception\/ActiveBranchesCannotBeEmpty.php.html#11\">App\\Query\\Exception\\ActiveBranchesCannotBeEmpty::__construct<\/a>"],[0,1,"<a href=\"App\/Query\/Handler\/ActiveBranchGames.php.html#12\">App\\Query\\Handler\\ActiveBranchGames::__invoke<\/a>"],[0,2,"<a href=\"App\/Query\/QueryActiveBranchGames.php.html#16\">App\\Query\\QueryActiveBranchGames::__construct<\/a>"],[0,1,"<a href=\"App\/Query\/QueryActiveBranchGames.php.html#29\">App\\Query\\QueryActiveBranchGames::branches<\/a>"],[100,1,"<a href=\"Games\/Attendee\/Member.php.html#17\">RpHaven\\Games\\Attendee\\Member::__construct<\/a>"],[0,2,"<a href=\"Games\/Attendee\/Member.php.html#23\">RpHaven\\Games\\Attendee\\Member::toString<\/a>"],[0,3,"<a href=\"Games\/Attendee\/Pronouns.php.html#16\">RpHaven\\Games\\Attendee\\Pronouns::create<\/a>"],[0,1,"<a href=\"Games\/Attendee\/Pronouns.php.html#31\">RpHaven\\Games\\Attendee\\Pronouns::__construct<\/a>"],[0,1,"<a href=\"Games\/Attendee\/Pronouns.php.html#36\">RpHaven\\Games\\Attendee\\Pronouns::toString<\/a>"],[0,1,"<a href=\"Games\/Branch.php.html#16\">RpHaven\\Games\\Branch::create<\/a>"],[0,1,"<a href=\"Games\/Branch.php.html#21\">RpHaven\\Games\\Branch::__construct<\/a>"],[0,1,"<a href=\"Games\/Branch.php.html#28\">RpHaven\\Games\\Branch::tables<\/a>"],[0,1,"<a href=\"Games\/Branch.php.html#33\">RpHaven\\Games\\Branch::add<\/a>"],[0,1,"<a href=\"Games\/Branch.php.html#41\">RpHaven\\Games\\Branch::count<\/a>"],[0,1,"<a href=\"Games\/Branch.php.html#46\">RpHaven\\Games\\Branch::toString<\/a>"],[100,1,"<a href=\"Games\/Branch\/Space\/Venue.php.html#16\">RpHaven\\Games\\Branch\\Space\\Venue::__construct<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue.php.html#24\">RpHaven\\Games\\Branch\\Space\\Venue::matches<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue.php.html#29\">RpHaven\\Games\\Branch\\Space\\Venue::jsonSerialize<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue.php.html#38\">RpHaven\\Games\\Branch\\Space\\Venue::space<\/a>"],[100,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates.php.html#17\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates::create<\/a>"],[100,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates.php.html#24\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates::__construct<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates.php.html#29\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates::toString<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates.php.html#38\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates::matches<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates.php.html#43\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates::jsonSerialize<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Latitude.php.html#22\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Latitude::jsonSerialize<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Latitude.php.html#26\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Latitude::coordinate<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Longitude.php.html#22\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Longitude::jsonSerialize<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Longitude.php.html#26\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Longitude::coordinate<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Virtual.php.html#11\">RpHaven\\Games\\Branch\\Space\\Virtual::jsonSerialize<\/a>"],[0,1,"<a href=\"Games\/Game.php.html#14\">RpHaven\\Games\\Game::__construct<\/a>"],[0,1,"<a href=\"Games\/Game.php.html#22\">RpHaven\\Games\\Game::firstSession<\/a>"],[0,1,"<a href=\"Games\/Game.php.html#27\">RpHaven\\Games\\Game::lastSession<\/a>"],[0,2,"<a href=\"Games\/Game\/Campaign.php.html#15\">RpHaven\\Games\\Game\\Campaign::create<\/a>"],[0,1,"<a href=\"Games\/Game\/Campaign.php.html#25\">RpHaven\\Games\\Game\\Campaign::__construct<\/a>"],[0,1,"<a href=\"Games\/Game\/Campaign.php.html#30\">RpHaven\\Games\\Game\\Campaign::add<\/a>"],[0,2,"<a href=\"Games\/Game\/Campaign.php.html#38\">RpHaven\\Games\\Game\\Campaign::sessions<\/a>"],[0,1,"<a href=\"Games\/Game\/Campaign.php.html#45\">RpHaven\\Games\\Game\\Campaign::start<\/a>"],[0,1,"<a href=\"Games\/Game\/Campaign.php.html#50\">RpHaven\\Games\\Game\\Campaign::end<\/a>"],[0,1,"<a href=\"Games\/Game\/Campaign.php.html#55\">RpHaven\\Games\\Game\\Campaign::count<\/a>"],[0,1,"<a href=\"Games\/Game\/Campaign.php.html#60\">RpHaven\\Games\\Game\\Campaign::sort<\/a>"],[0,1,"<a href=\"Games\/Game\/Party.php.html#18\">RpHaven\\Games\\Game\\Party::form<\/a>"],[0,3,"<a href=\"Games\/Game\/Party.php.html#23\">RpHaven\\Games\\Game\\Party::formPartyFromParticipants<\/a>"],[0,1,"<a href=\"Games\/Game\/Party.php.html#37\">RpHaven\\Games\\Game\\Party::__construct<\/a>"],[0,1,"<a href=\"Games\/Game\/Party.php.html#43\">RpHaven\\Games\\Game\\Party::players<\/a>"],[0,1,"<a href=\"Games\/Game\/Party.php.html#50\">RpHaven\\Games\\Game\\Party::gamesMasters<\/a>"],[0,1,"<a href=\"Games\/Game\/Party.php.html#57\">RpHaven\\Games\\Game\\Party::count<\/a>"],[0,1,"<a href=\"Games\/Game\/Party.php.html#62\">RpHaven\\Games\\Game\\Party::add<\/a>"],[0,3,"<a href=\"Games\/Game\/Party.php.html#70\">RpHaven\\Games\\Game\\Party::assertValidParty<\/a>"],[0,1,"<a href=\"Games\/Game\/Party\/Exception\/DuplicateParticipant.php.html#12\">RpHaven\\Games\\Game\\Party\\Exception\\DuplicateParticipant::__construct<\/a>"],[0,1,"<a href=\"Games\/Game\/Party\/Exception\/PartyHasNoGamesMaster.php.html#12\">RpHaven\\Games\\Game\\Party\\Exception\\PartyHasNoGamesMaster::__construct<\/a>"],[100,1,"<a href=\"Games\/Game\/Party\/Participant\/GamesMaster.php.html#16\">RpHaven\\Games\\Game\\Party\\Participant\\GamesMaster::create<\/a>"],[100,1,"<a href=\"Games\/Game\/Party\/Participant\/GamesMaster.php.html#21\">RpHaven\\Games\\Game\\Party\\Participant\\GamesMaster::__construct<\/a>"],[0,1,"<a href=\"Games\/Game\/Party\/Participant\/GamesMaster.php.html#25\">RpHaven\\Games\\Game\\Party\\Participant\\GamesMaster::toString<\/a>"],[0,1,"<a href=\"Games\/Game\/Party\/Participant\/GamesMaster.php.html#30\">RpHaven\\Games\\Game\\Party\\Participant\\GamesMaster::roles<\/a>"],[0,1,"<a href=\"Games\/Game\/Party\/Participant\/GamesMaster.php.html#35\">RpHaven\\Games\\Game\\Party\\Participant\\GamesMaster::hasRole<\/a>"],[0,1,"<a href=\"Games\/Game\/Party\/Participant\/Player.php.html#16\">RpHaven\\Games\\Game\\Party\\Participant\\Player::__construct<\/a>"],[0,1,"<a href=\"Games\/Game\/Party\/Participant\/Player.php.html#21\">RpHaven\\Games\\Game\\Party\\Participant\\Player::toString<\/a>"],[0,1,"<a href=\"Games\/Game\/Party\/Participant\/Player.php.html#26\">RpHaven\\Games\\Game\\Party\\Participant\\Player::roles<\/a>"],[0,1,"<a href=\"Games\/Game\/Party\/Participant\/Player.php.html#31\">RpHaven\\Games\\Game\\Party\\Participant\\Player::hasRole<\/a>"],[0,1,"<a href=\"Games\/Game\/Session.php.html#13\">RpHaven\\Games\\Game\\Session::__construct<\/a>"],[0,1,"<a href=\"Games\/Game\/Session.php.html#20\">RpHaven\\Games\\Game\\Session::cancel<\/a>"],[0,1,"<a href=\"Games\/Game\/Session.php.html#25\">RpHaven\\Games\\Game\\Session::confirm<\/a>"],[0,1,"<a href=\"Games\/Game\/Session.php.html#30\">RpHaven\\Games\\Game\\Session::start<\/a>"],[0,1,"<a href=\"Games\/Game\/Session.php.html#35\">RpHaven\\Games\\Game\\Session::end<\/a>"],[0,1,"<a href=\"Games\/Game\/Session.php.html#40\">RpHaven\\Games\\Game\\Session::status<\/a>"],[0,2,"<a href=\"Games\/Game\/System.php.html#11\">RpHaven\\Games\\Game\\System::__construct<\/a>"],[66.66666666666666,2,"<a href=\"Games\/Meet\/Duration.php.html#11\">RpHaven\\Games\\Meet\\Duration::__construct<\/a>"],[0,1,"<a href=\"Games\/Meet\/Duration.php.html#20\">RpHaven\\Games\\Meet\\Duration::start<\/a>"],[0,1,"<a href=\"Games\/Meet\/Duration.php.html#25\">RpHaven\\Games\\Meet\\Duration::end<\/a>"],[0,1,"<a href=\"Games\/Meet\/Duration.php.html#30\">RpHaven\\Games\\Meet\\Duration::diff<\/a>"],[0,2,"<a href=\"Games\/Meet\/Duration.php.html#35\">RpHaven\\Games\\Meet\\Duration::intersects<\/a>"],[0,1,"<a href=\"Games\/Meet\/Duration\/Exception\/StartDateTimeCannotBeAfterEndDateTime.php.html#12\">RpHaven\\Games\\Meet\\Duration\\Exception\\StartDateTimeCannotBeAfterEndDateTime::__construct<\/a>"],[0,1,"<a href=\"Games\/System\/Exception\/SystemNameCannotBeEmpty.php.html#11\">RpHaven\\Games\\System\\Exception\\SystemNameCannotBeEmpty::__construct<\/a>"],[100,1,"<a href=\"Games\/Table.php.html#23\">RpHaven\\Games\\Table::set<\/a>"],[100,1,"<a href=\"Games\/Table.php.html#31\">RpHaven\\Games\\Table::__construct<\/a>"],[100,1,"<a href=\"Games\/Table.php.html#41\">RpHaven\\Games\\Table::toString<\/a>"],[0,1,"<a href=\"Games\/Table.php.html#46\">RpHaven\\Games\\Table::add<\/a>"],[0,2,"<a href=\"Games\/Table.php.html#57\">RpHaven\\Games\\Table::games<\/a>"],[100,1,"<a href=\"Games\/Table.php.html#65\">RpHaven\\Games\\Table::count<\/a>"],[0,1,"<a href=\"Games\/Table.php.html#70\">RpHaven\\Games\\Table::sort<\/a>"],[28.57142857142857,3,"<a href=\"Games\/Table.php.html#77\">RpHaven\\Games\\Table::assertValidGames<\/a>"],[0,1,"<a href=\"Infra\/CommandBus\/SymfonyCommandBus.php.html#19\">Infra\\CommandBus\\SymfonyCommandBus::__construct<\/a>"],[0,1,"<a href=\"Infra\/CommandBus\/SymfonyCommandBus.php.html#24\">Infra\\CommandBus\\SymfonyCommandBus::handle<\/a>"],[0,1,"<a href=\"Infra\/Factory\/CampaignFactory.php.html#14\">Infra\\Factory\\CampaignFactory::meets<\/a>"],[0,2,"<a href=\"Infra\/Factory\/CampaignFactory.php.html#19\">Infra\\Factory\\CampaignFactory::createMeetSessions<\/a>"],[0,2,"<a href=\"Infra\/Factory\/GameFactory.php.html#15\">Infra\\Factory\\GameFactory::init<\/a>"],[100,1,"<a href=\"Infra\/Factory\/MeetFactory.php.html#14\">Infra\\Factory\\MeetFactory::__construct<\/a>"],[100,2,"<a href=\"Infra\/Factory\/MeetFactory.php.html#20\">Infra\\Factory\\MeetFactory::series<\/a>"],[0,1,"<a href=\"Infra\/Meet\/MeetPeriod.php.html#16\">Infra\\Meet\\MeetPeriod::__construct<\/a>"],[0,1,"<a href=\"Infra\/Meet\/MeetPeriod.php.html#23\">Infra\\Meet\\MeetPeriod::start<\/a>"],[0,1,"<a href=\"Infra\/Meet\/MeetPeriod.php.html#28\">Infra\\Meet\\MeetPeriod::end<\/a>"],[0,2,"<a href=\"Infra\/Meet\/MeetPeriod.php.html#33\">Infra\\Meet\\MeetPeriod::repeat<\/a>"],[0,1,"<a href=\"Infra\/QueryBus\/SymfonyQueryBus.php.html#18\">Infra\\QueryBus\\SymfonyQueryBus::__construct<\/a>"],[0,1,"<a href=\"Infra\/QueryBus\/SymfonyQueryBus.php.html#23\">Infra\\QueryBus\\SymfonyQueryBus::handle<\/a>"],[75,2,"<a href=\"Games\/Attendee\/Traits\/AttendeeName.php.html#11\">RpHaven\\Games\\Attendee\\Traits\\AttendeeName::create<\/a>"],[75,2,"<a href=\"Games\/Branch\/Space\/Traits\/MeetSeries.php.html#16\">RpHaven\\Games\\Branch\\Space\\Traits\\MeetSeries::series<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Traits\/MeetSeries.php.html#23\">RpHaven\\Games\\Branch\\Space\\Traits\\MeetSeries::duration<\/a>"],[100,0,"<a href=\"Games\/Branch\/Space\/Traits\/MeetSeries.php.html#28\">RpHaven\\Games\\Branch\\Space\\Traits\\MeetSeries::space<\/a>"],[100,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Traits\/BigDecimalTrait.php.html#11\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Traits\\BigDecimalTrait::create<\/a>"],[100,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Traits\/BigDecimalTrait.php.html#16\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Traits\\BigDecimalTrait::__construct<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Traits\/CoordinateStringTrait.php.html#11\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Traits\\CoordinateStringTrait::toString<\/a>"],[100,0,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Traits\/CoordinateStringTrait.php.html#16\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Traits\\CoordinateStringTrait::coordinate<\/a>"],[0,1,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Traits\/DegreesTrait.php.html#11\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Traits\\DegreesTrait::degrees<\/a>"],[100,0,"<a href=\"Games\/Branch\/Space\/Venue\/Coordinates\/Traits\/DegreesTrait.php.html#16\">RpHaven\\Games\\Branch\\Space\\Venue\\Coordinates\\Traits\\DegreesTrait::coordinate<\/a>"],[100,1,"<a href=\"Games\/Traits\/ToString.php.html#9\">RpHaven\\Games\\Traits\\ToString::__toString<\/a>"],[100,0,"<a href=\"Games\/Traits\/ToString.php.html#14\">RpHaven\\Games\\Traits\\ToString::toString<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
