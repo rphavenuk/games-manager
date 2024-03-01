@@ -1,0 +1,13 @@
+---
+controllers:
+    resource:
+        path: ../src/Api/Http/Action/
+        namespace: Api\Http\Action
+    type: attribute
+
+active_games:
+  path: /branches/{branch}/games/active
+  controller: Api\Http\Action\ActiveGames
+  methods:
+    - GET
+    - HEAD

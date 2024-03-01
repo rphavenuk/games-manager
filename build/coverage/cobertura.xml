@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.16279069767442" branch-rate="0.33734939759036" lines-covered="35" lines-valid="215" branches-covered="28" branches-valid="83" complexity="136" version="0.4" timestamp="1709037277">
+  <sources>
+    <source>/RPHaven/src</source>
+  </sources>
+  <packages>
+    <package name="Api/Console/Action.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Api/Console/Action/ActiveGames.php" line-rate="0" branch-rate="0" complexity="2">
+      <classes>
+        <class name="Api\Console\Action\ActiveGames" filename="Api/Console/Action/ActiveGames.php" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="__construct" signature="App\Query\QueryBus $queryBus, Api\Console\Action\ActiveGames\ActiveBranchGames $activeBranchGames, Api\Console\ResultOutputFormatter $resultOutputFormatter" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="27" hits="0"/>
+              </lines>
+            </method>
+            <method name="execute" signature="Symfony\Component\Console\Input\InputInterface $input, Symfony\Component\Console\Output\OutputInterface $output" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="32" hits="0"/>
+                <line number="33" hits="0"/>
+                <line number="34" hits="0"/>
+                <line number="36" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="27" hits="0"/>
+            <line number="32" hits="0"/>
+            <line number="33" hits="0"/>
+            <line number="34" hits="0"/>
+            <line number="36" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Api/Console/Action/ActiveGames/ActiveBranchGames.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="Api\Console\Action\ActiveGames\ActiveBranchGames" filename="Api/Console/Action/ActiveGames/ActiveBranchGames.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="build" signature="Symfony\Component\Console\Input\InputInterface $input, Symfony\Component\Console\Output\OutputInterface $output" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="18" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Api/Console/Action/ActiveGames/ActiveGamesFormatter.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="Api\Console\Action\ActiveGames\ActiveGamesFormatter" filename="Api/Console/Action/ActiveGames/ActiveGamesFormatter.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="format" signature="Symfony\Component\Console\Output\OutputInterface $output, ?App\Result $result" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="17" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Api/Console/Action/ActiveGames/Configuration.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="Api\Console\Action\ActiveGames\Configuration" filename="Api/Console/Action/ActiveGames/Configuration.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Api/Console/CommandFactory.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Api/Console/QueryFactory.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Api/Console/ResultOutputFormatter.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Api/Http/Action.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Api/Http/Action/ActiveGames.php" line-rate="0" branch-rate="0" complexity="2">
+      <classes>
+        <class name="Api\Http\Action\ActiveGames" filename="Api/Http/Action/ActiveGames.php" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="__construct" signature="App\Query\QueryBus $queryBus, Api\Http\QueryFactory $queryFactory, Api\Http\ResponseFormatter $responseFormatter" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="21" hits="0"/>
+              </lines>
+            </method>
+            <method name="__invoke" signature="Psr\Http\Message\ServerRequestInterface $request" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="26" hits="0"/>
+                <line number="27" hits="0"/>
+                <line number="29" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="0"/>
+            <line number="26" hits="0"/>
+            <line number="27" hits="0"/>
+            <line number="29" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Api/Http/Action/ActiveGames/RequestActiveBranchGamesQueryFactory.php" line-rate="0" branch-rate="0" complexity="6">
+      <classes>
+        <class name="Api\Http\Action\ActiveGames\RequestActiveBranchGamesQueryFactory" filename="Api/Http/Action/ActiveGames/RequestActiveBranchGamesQueryFactory.php" line-rate="0" branch-rate="0" complexity="6">
+          <methods>
+            <method name="build" signature="Psr\Http\Message\ServerRequestInterface $request" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="18" hits="0"/>
+                <line number="19" hits="0"/>
+                <line number="20" hits="0"/>
+              </lines>
+            </method>
+            <method name="getQueryDate" signature="Psr\Http\Message\ServerRequestInterface $request" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="25" hits="0"/>
+                <line number="26" hits="0"/>
+                <line number="29" hits="0"/>
+              </lines>
+            </method>
+            <method name="getQueryBranches" signature="Psr\Http\Message\ServerRequestInterface $request" line-rate="0" branch-rate="0" complexity="3">
+              <lines>
+                <line number="34" hits="0"/>
+                <line number="35" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="0"/>
+            <line number="19" hits="0"/>
+            <line number="20" hits="0"/>
+            <line number="25" hits="0"/>
+            <line number="26" hits="0"/>
+            <line number="29" hits="0"/>
+            <line number="34" hits="0"/>
+            <line number="35" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Api/Http/CommandFactory.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Api/Http/QueryFactory.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Api/Http/ResponseFormatter.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="App/Command.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="App/Command/CommandBus.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="App/Exception/AppException.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="App/Query.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="App/Query/Exception/ActiveBranchesCannotBeEmpty.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Query\Exception\ActiveBranchesCannotBeEmpty" filename="App/Query/Exception/ActiveBranchesCannotBeEmpty.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="__construct" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="13" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="App/Query/Exception/QueryException.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="App/Query/Handler/ActiveBranchGames.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="App\Query\Handler\ActiveBranchGames" filename="App/Query/Handler/ActiveBranchGames.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="__invoke" signature="App\Query\QueryActiveBranchGames $query" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="15" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="App/Query/QueryActiveBranchGames.php" line-rate="0" branch-rate="0" complexity="3">
+      <classes>
+        <class name="App\Query\QueryActiveBranchGames" filename="App/Query/QueryActiveBranchGames.php" line-rate="0" branch-rate="0" complexity="3">
+          <methods>
+            <method name="__construct" signature="DateTimeImmutable $date, RpHaven\Games\Branch $branches" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="20" hits="0"/>
+                <line number="21" hits="0"/>
+                <line number="23" hits="0"/>
+              </lines>
+            </method>
+            <method name="branches" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="31" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0"/>
+            <line number="21" hits="0"/>
+            <line number="23" hits="0"/>
+            <line number="31" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="App/Query/QueryBus.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="App/Result.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="App/Result/ActiveGames.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="App\Result\ActiveGames" filename="App/Result/ActiveGames.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Attendee.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Attendee/Guest.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="RpHaven\Games\Attendee\Guest" filename="Games/Attendee/Guest.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Attendee/Member.php" line-rate="0.25" branch-rate="0.25" complexity="3">
+      <classes>
+        <class name="RpHaven\Games\Attendee\Member" filename="Games/Attendee/Member.php" line-rate="0.25" branch-rate="0.25" complexity="3">
+          <methods>
+            <method name="__construct" signature="string $publicName, ?RpHaven\Games\Attendee\Pronouns $pronouns" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="1"/>
+              </lines>
+            </method>
+            <method name="toString" signature="" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="25" hits="0"/>
+                <line number="26" hits="0"/>
+                <line number="29" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="1"/>
+            <line number="25" hits="0"/>
+            <line number="26" hits="0"/>
+            <line number="29" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Attendee/Pronouns.php" line-rate="0" branch-rate="0" complexity="5">
+      <classes>
+        <class name="RpHaven\Games\Attendee\Pronouns" filename="Games/Attendee/Pronouns.php" line-rate="0" branch-rate="0" complexity="5">
+          <methods>
+            <method name="create" signature="string $pronouns" line-rate="0" branch-rate="0" complexity="3">
+              <lines>
+                <line number="18" hits="0"/>
+                <line number="19" hits="0"/>
+                <line number="20" hits="0"/>
+                <line number="21" hits="0"/>
+                <line number="22" hits="0"/>
+                <line number="26" hits="0"/>
+                <line number="27" hits="0"/>
+                <line number="28" hits="0"/>
+              </lines>
+            </method>
+            <method name="__construct" signature="string $pronouns" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="33" hits="0"/>
+              </lines>
+            </method>
+            <method name="toString" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="38" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="0"/>
+            <line number="19" hits="0"/>
+            <line number="20" hits="0"/>
+            <line number="21" hits="0"/>
+            <line number="22" hits="0"/>
+            <line number="26" hits="0"/>
+            <line number="27" hits="0"/>
+            <line number="28" hits="0"/>
+            <line number="33" hits="0"/>
+            <line number="38" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Attendee/Traits/AttendeeName.php" line-rate="1" branch-rate="0.75" complexity="2">
+      <classes>
+        <class name="RpHaven\Games\Attendee\Traits\AttendeeName" filename="Games/Attendee/Traits/AttendeeName.php" line-rate="1" branch-rate="0.75" complexity="2">
+          <methods>
+            <method name="create" signature="string $name, string $pronouns" line-rate="1" branch-rate="0.75" complexity="2">
+              <lines>
+                <line number="13" hits="1"/>
+                <line number="15" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="1"/>
+            <line number="15" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Branch.php" line-rate="0" branch-rate="0" complexity="6">
+      <classes>
+        <class name="RpHaven\Games\Branch" filename="Games/Branch.php" line-rate="0" branch-rate="0" complexity="6">
+          <methods>
+            <method name="create" signature="string $name, RpHaven\Games\Table $tables" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="18" hits="0"/>
+              </lines>
+            </method>
+            <method name="__construct" signature="string $name, Ds\Set $tables" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="23" hits="0"/>
+              </lines>
+            </method>
+            <method name="tables" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="30" hits="0"/>
+              </lines>
+            </method>
+            <method name="add" signature="RpHaven\Games\Table $table" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="35" hits="0"/>
+                <line number="36" hits="0"/>
+                <line number="38" hits="0"/>
+              </lines>
+            </method>
+            <method name="count" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="43" hits="0"/>
+              </lines>
+            </method>
+            <method name="toString" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="48" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="0"/>
+            <line number="23" hits="0"/>
+            <line number="30" hits="0"/>
+            <line number="35" hits="0"/>
+            <line number="36" hits="0"/>
+            <line number="38" hits="0"/>
+            <line number="43" hits="0"/>
+            <line number="48" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Branch/Space.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Branch/Space/Traits/MeetSeries.php" line-rate="0.66666666666667" branch-rate="0.6" complexity="3">
+      <classes>
+        <class name="RpHaven\Games\Branch\Space\Traits\MeetSeries" filename="Games/Branch/Space/Traits/MeetSeries.php" line-rate="0.66666666666667" branch-rate="0.6" complexity="3">
+          <methods>
+            <method name="series" signature="DateInterval $duration, DateTimeImmutable $starts" line-rate="1" branch-rate="0.75" complexity="2">
+              <lines>
+                <line number="18" hits="1"/>
+                <line number="19" hits="1"/>
+              </lines>
+            </method>
+            <method name="duration" signature="DateTimeImmutable $start, DateInterval $duration" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="25" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="1"/>
+            <line number="19" hits="1"/>
+            <line number="25" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Branch/Space/Venue.php" line-rate="0.125" branch-rate="0.25" complexity="4">
+      <classes>
+        <class name="RpHaven\Games\Branch\Space\Venue" filename="Games/Branch/Space/Venue.php" line-rate="0.125" branch-rate="0.25" complexity="4">
+          <methods>
+            <method name="__construct" signature="string $name, RpHaven\Games\Branch\Space\Venue\Coordinates $coordinates, ?Psr\Http\Message\UriInterface $uri" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="1"/>
+              </lines>
+            </method>
+            <method name="matches" signature="RpHaven\Games\Branch\Space\Venue $venue" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="26" hits="0"/>
+              </lines>
+            </method>
+            <method name="jsonSerialize" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="31" hits="0"/>
+                <line number="32" hits="0"/>
+                <line number="33" hits="0"/>
+                <line number="34" hits="0"/>
+                <line number="35" hits="0"/>
+              </lines>
+            </method>
+            <method name="space" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="40" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="1"/>
+            <line number="26" hits="0"/>
+            <line number="31" hits="0"/>
+            <line number="32" hits="0"/>
+            <line number="33" hits="0"/>
+            <line number="34" hits="0"/>
+            <line number="35" hits="0"/>
+            <line number="40" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Branch/Space/Venue/Coordinates.php" line-rate="0.33333333333333" branch-rate="0.4" complexity="5">
+      <classes>
+        <class name="RpHaven\Games\Branch\Space\Venue\Coordinates" filename="Games/Branch/Space/Venue/Coordinates.php" line-rate="0.33333333333333" branch-rate="0.4" complexity="5">
+          <methods>
+            <method name="create" signature="float|string $latitude, float|string $longitude" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="1"/>
+                <line number="20" hits="1"/>
+                <line number="21" hits="1"/>
+                <line number="22" hits="1"/>
+              </lines>
+            </method>
+            <method name="__construct" signature="RpHaven\Games\Branch\Space\Venue\Coordinates\Latitude $latitude, RpHaven\Games\Branch\Space\Venue\Coordinates\Longitude $longitude" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="1"/>
+              </lines>
+            </method>
+            <method name="toString" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="31" hits="0"/>
+                <line number="32" hits="0"/>
+                <line number="33" hits="0"/>
+                <line number="34" hits="0"/>
+                <line number="35" hits="0"/>
+              </lines>
+            </method>
+            <method name="matches" signature="RpHaven\Games\Branch\Space\Venue\Coordinates $coordinates" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="40" hits="0"/>
+              </lines>
+            </method>
+            <method name="jsonSerialize" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="45" hits="0"/>
+                <line number="46" hits="0"/>
+                <line number="47" hits="0"/>
+                <line number="48" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="1"/>
+            <line number="20" hits="1"/>
+            <line number="21" hits="1"/>
+            <line number="22" hits="1"/>
+            <line number="27" hits="1"/>
+            <line number="31" hits="0"/>
+            <line number="32" hits="0"/>
+            <line number="33" hits="0"/>
+            <line number="34" hits="0"/>
+            <line number="35" hits="0"/>
+            <line number="40" hits="0"/>
+            <line number="45" hits="0"/>
+            <line number="46" hits="0"/>
+            <line number="47" hits="0"/>
+            <line number="48" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Branch/Space/Venue/Coordinates/Coordinate.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Branch/Space/Venue/Coordinates/GeographicCoordinate.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Branch/Space/Venue/Coordinates/Latitude.php" line-rate="0" branch-rate="0" complexity="2">
+      <classes>
+        <class name="RpHaven\Games\Branch\Space\Venue\Coordinates\Latitude" filename="Games/Branch/Space/Venue/Coordinates/Latitude.php" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="jsonSerialize" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="24" hits="0"/>
+              </lines>
+            </method>
+            <method name="coordinate" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="28" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="0"/>
+            <line number="28" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Branch/Space/Venue/Coordinates/Longitude.php" line-rate="0" branch-rate="0" complexity="2">
+      <classes>
+        <class name="RpHaven\Games\Branch\Space\Venue\Coordinates\Longitude" filename="Games/Branch/Space/Venue/Coordinates/Longitude.php" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="jsonSerialize" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="24" hits="0"/>
+              </lines>
+            </method>
+            <method name="coordinate" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="28" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="0"/>
+            <line number="28" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Branch/Space/Venue/Coordinates/Traits/BigDecimalTrait.php" line-rate="1" branch-rate="1" complexity="2">
+      <classes>
+        <class name="RpHaven\Games\Branch\Space\Venue\Coordinates\Traits\BigDecimalTrait" filename="Games/Branch/Space/Venue/Coordinates/Traits/BigDecimalTrait.php" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="create" signature="float|string $coordinate" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1"/>
+              </lines>
+            </method>
+            <method name="__construct" signature="Brick\Math\BigDecimal $coordinate" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="1"/>
+            <line number="19" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Branch/Space/Venue/Coordinates/Traits/CoordinateStringTrait.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="RpHaven\Games\Branch\Space\Venue\Coordinates\Traits\CoordinateStringTrait" filename="Games/Branch/Space/Venue/Coordinates/Traits/CoordinateStringTrait.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="toString" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="13" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Branch/Space/Venue/Coordinates/Traits/DegreesTrait.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="RpHaven\Games\Branch\Space\Venue\Coordinates\Traits\DegreesTrait" filename="Games/Branch/Space/Venue/Coordinates/Traits/DegreesTrait.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="degrees" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="13" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Branch/Space/Virtual.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="RpHaven\Games\Branch\Space\Virtual" filename="Games/Branch/Space/Virtual.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="jsonSerialize" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="13" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Exception/GamesException.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Game.php" line-rate="0" branch-rate="0" complexity="3">
+      <classes>
+        <class name="RpHaven\Games\Game" filename="Games/Game.php" line-rate="0" branch-rate="0" complexity="3">
+          <methods>
+            <method name="__construct" signature="RpHaven\Games\Game\Campaign $campaign, RpHaven\Games\Game\System $system, RpHaven\Games\Game\Party $party" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="20" hits="0"/>
+              </lines>
+            </method>
+            <method name="firstSession" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="24" hits="0"/>
+              </lines>
+            </method>
+            <method name="lastSession" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="29" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0"/>
+            <line number="24" hits="0"/>
+            <line number="29" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Game/Campaign.php" line-rate="0" branch-rate="0" complexity="10">
+      <classes>
+        <class name="RpHaven\Games\Game\Campaign" filename="Games/Game/Campaign.php" line-rate="0" branch-rate="0" complexity="10">
+          <methods>
+            <method name="create" signature="RpHaven\Games\Game\Session $sessions" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="18" hits="0"/>
+                <line number="19" hits="0"/>
+                <line number="20" hits="0"/>
+                <line number="23" hits="0"/>
+              </lines>
+            </method>
+            <method name="__construct" signature="Ds\Map $sessions" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="27" hits="0"/>
+              </lines>
+            </method>
+            <method name="add" signature="RpHaven\Games\Game\Session $sessions" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="32" hits="0"/>
+              </lines>
+            </method>
+            <method name="sessions" signature="" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="40" hits="0"/>
+                <line number="41" hits="0"/>
+              </lines>
+            </method>
+            <method name="start" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="47" hits="0"/>
+              </lines>
+            </method>
+            <method name="end" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="52" hits="0"/>
+              </lines>
+            </method>
+            <method name="count" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="57" hits="0"/>
+              </lines>
+            </method>
+            <method name="sort" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="62" hits="0"/>
+                <line number="63" hits="0"/>
+                <line number="64" hits="0"/>
+                <line number="65" hits="0"/>
+                <line number="66" hits="0"/>
+                <line number="67" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="0"/>
+            <line number="19" hits="0"/>
+            <line number="20" hits="0"/>
+            <line number="23" hits="0"/>
+            <line number="27" hits="0"/>
+            <line number="32" hits="0"/>
+            <line number="40" hits="0"/>
+            <line number="41" hits="0"/>
+            <line number="47" hits="0"/>
+            <line number="52" hits="0"/>
+            <line number="57" hits="0"/>
+            <line number="62" hits="0"/>
+            <line number="63" hits="0"/>
+            <line number="64" hits="0"/>
+            <line number="65" hits="0"/>
+            <line number="66" hits="0"/>
+            <line number="67" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Game/Campaign/Exception/CampaignException.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Game/Exception/GameException.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Game/Party.php" line-rate="0" branch-rate="0" complexity="12">
+      <classes>
+        <class name="RpHaven\Games\Game\Party" filename="Games/Game/Party.php" line-rate="0" branch-rate="0" complexity="12">
+          <methods>
+            <method name="form" signature="RpHaven\Games\Game\Party\Participant $participants" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="20" hits="0"/>
+              </lines>
+            </method>
+            <method name="formPartyFromParticipants" signature="iterable $participants" line-rate="0" branch-rate="0" complexity="3">
+              <lines>
+                <line number="25" hits="0"/>
+                <line number="27" hits="0"/>
+                <line number="28" hits="0"/>
+                <line number="29" hits="0"/>
+                <line number="31" hits="0"/>
+                <line number="34" hits="0"/>
+              </lines>
+            </method>
+            <method name="__construct" signature="Ds\Set $participants" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="40" hits="0"/>
+              </lines>
+            </method>
+            <method name="players" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="45" hits="0"/>
+                <line number="46" hits="0"/>
+                <line number="47" hits="0"/>
+              </lines>
+            </method>
+            <method name="gamesMasters" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="52" hits="0"/>
+                <line number="53" hits="0"/>
+                <line number="54" hits="0"/>
+              </lines>
+            </method>
+            <method name="count" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="59" hits="0"/>
+              </lines>
+            </method>
+            <method name="add" signature="RpHaven\Games\Game\Party\Participant $participant" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="64" hits="0"/>
+                <line number="65" hits="0"/>
+                <line number="67" hits="0"/>
+              </lines>
+            </method>
+            <method name="assertValidParty" signature="" line-rate="0" branch-rate="0" complexity="3">
+              <lines>
+                <line number="72" hits="0"/>
+                <line number="73" hits="0"/>
+                <line number="74" hits="0"/>
+                <line number="78" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0"/>
+            <line number="25" hits="0"/>
+            <line number="27" hits="0"/>
+            <line number="28" hits="0"/>
+            <line number="29" hits="0"/>
+            <line number="31" hits="0"/>
+            <line number="34" hits="0"/>
+            <line number="40" hits="0"/>
+            <line number="45" hits="0"/>
+            <line number="46" hits="0"/>
+            <line number="47" hits="0"/>
+            <line number="52" hits="0"/>
+            <line number="53" hits="0"/>
+            <line number="54" hits="0"/>
+            <line number="59" hits="0"/>
+            <line number="64" hits="0"/>
+            <line number="65" hits="0"/>
+            <line number="67" hits="0"/>
+            <line number="72" hits="0"/>
+            <line number="73" hits="0"/>
+            <line number="74" hits="0"/>
+            <line number="78" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Game/Party/Exception/DuplicateParticipant.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="RpHaven\Games\Game\Party\Exception\DuplicateParticipant" filename="Games/Game/Party/Exception/DuplicateParticipant.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="__construct" signature="RpHaven\Games\Game\Party\Participant $duplicate" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="15" hits="0"/>
+                <line number="16" hits="0"/>
+                <line number="17" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0"/>
+            <line number="16" hits="0"/>
+            <line number="17" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Game/Party/Exception/PartyException.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Game/Party/Exception/PartyHasNoGamesMaster.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="RpHaven\Games\Game\Party\Exception\PartyHasNoGamesMaster" filename="Games/Game/Party/Exception/PartyHasNoGamesMaster.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="__construct" signature="Ds\Set $party" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="14" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Game/Party/Participant.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Game/Party/Participant/GamesMaster.php" line-rate="0.4" branch-rate="0.4" complexity="5">
+      <classes>
+        <class name="RpHaven\Games\Game\Party\Participant\GamesMaster" filename="Games/Game/Party/Participant/GamesMaster.php" line-rate="0.4" branch-rate="0.4" complexity="5">
+          <methods>
+            <method name="create" signature="string $name, string $pronouns" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="1"/>
+              </lines>
+            </method>
+            <method name="__construct" signature="RpHaven\Games\Attendee\Member $member" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="1"/>
+              </lines>
+            </method>
+            <method name="toString" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="27" hits="0"/>
+              </lines>
+            </method>
+            <method name="roles" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="32" hits="0"/>
+              </lines>
+            </method>
+            <method name="hasRole" signature="RpHaven\Games\Game\Party\Role $role" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="37" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="1"/>
+            <line number="23" hits="1"/>
+            <line number="27" hits="0"/>
+            <line number="32" hits="0"/>
+            <line number="37" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Game/Party/Participant/Player.php" line-rate="0" branch-rate="0" complexity="4">
+      <classes>
+        <class name="RpHaven\Games\Game\Party\Participant\Player" filename="Games/Game/Party/Participant/Player.php" line-rate="0" branch-rate="0" complexity="4">
+          <methods>
+            <method name="__construct" signature="RpHaven\Games\Attendee $attendee, DateTimeImmutable $joined" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="19" hits="0"/>
+              </lines>
+            </method>
+            <method name="toString" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="23" hits="0"/>
+              </lines>
+            </method>
+            <method name="roles" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="28" hits="0"/>
+              </lines>
+            </method>
+            <method name="hasRole" signature="RpHaven\Games\Game\Party\Role $role" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="33" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="0"/>
+            <line number="23" hits="0"/>
+            <line number="28" hits="0"/>
+            <line number="33" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Game/Party/Role.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Game/Session.php" line-rate="0" branch-rate="0" complexity="6">
+      <classes>
+        <class name="RpHaven\Games\Game\Session" filename="Games/Game/Session.php" line-rate="0" branch-rate="0" complexity="6">
+          <methods>
+            <method name="__construct" signature="RpHaven\Games\Meet $meet, RpHaven\Games\Meet\Duration $duration, RpHaven\Games\Session\Status $status" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="18" hits="0"/>
+              </lines>
+            </method>
+            <method name="cancel" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="22" hits="0"/>
+              </lines>
+            </method>
+            <method name="confirm" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="27" hits="0"/>
+              </lines>
+            </method>
+            <method name="start" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="32" hits="0"/>
+              </lines>
+            </method>
+            <method name="end" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="37" hits="0"/>
+              </lines>
+            </method>
+            <method name="status" signature="RpHaven\Games\Session\Status $status" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="42" hits="0"/>
+                <line number="43" hits="0"/>
+                <line number="44" hits="0"/>
+                <line number="45" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="0"/>
+            <line number="22" hits="0"/>
+            <line number="27" hits="0"/>
+            <line number="32" hits="0"/>
+            <line number="37" hits="0"/>
+            <line number="42" hits="0"/>
+            <line number="43" hits="0"/>
+            <line number="44" hits="0"/>
+            <line number="45" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Game/System.php" line-rate="0" branch-rate="0" complexity="2">
+      <classes>
+        <class name="RpHaven\Games\Game\System" filename="Games/Game/System.php" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="__construct" signature="string $name, ?Psr\Http\Message\UriInterface $uri" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="15" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Interface/ToStringable.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Meet.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Meet/Duration.php" line-rate="0.16666666666667" branch-rate="0.22222222222222" complexity="7">
+      <classes>
+        <class name="RpHaven\Games\Meet\Duration" filename="Games/Meet/Duration.php" line-rate="0.16666666666667" branch-rate="0.22222222222222" complexity="7">
+          <methods>
+            <method name="__construct" signature="DateTimeImmutable $start, DateTimeImmutable $end" line-rate="0.5" branch-rate="0.66666666666667" complexity="2">
+              <lines>
+                <line number="15" hits="2"/>
+                <line number="16" hits="0"/>
+              </lines>
+            </method>
+            <method name="start" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="22" hits="0"/>
+              </lines>
+            </method>
+            <method name="end" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="27" hits="0"/>
+              </lines>
+            </method>
+            <method name="diff" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="32" hits="0"/>
+              </lines>
+            </method>
+            <method name="intersects" signature="RpHaven\Games\Meet\Duration $duration" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="37" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="2"/>
+            <line number="16" hits="0"/>
+            <line number="22" hits="0"/>
+            <line number="27" hits="0"/>
+            <line number="32" hits="0"/>
+            <line number="37" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Meet/Duration/Exception/DurationException.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Meet/Duration/Exception/StartDateTimeCannotBeAfterEndDateTime.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="RpHaven\Games\Meet\Duration\Exception\StartDateTimeCannotBeAfterEndDateTime" filename="Games/Meet/Duration/Exception/StartDateTimeCannotBeAfterEndDateTime.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="__construct" signature="DateTimeImmutable $start, DateTimeImmutable $end" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="16" hits="0"/>
+                <line number="17" hits="0"/>
+                <line number="18" hits="0"/>
+                <line number="19" hits="0"/>
+                <line number="20" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="0"/>
+            <line number="17" hits="0"/>
+            <line number="18" hits="0"/>
+            <line number="19" hits="0"/>
+            <line number="20" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Meet/Exception/MeetException.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Repository/ActiveBranchCampaigns.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Session/Exception/SessionException.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/Session/Status.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/System/Exception/SystemException.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+    <package name="Games/System/Exception/SystemNameCannotBeEmpty.php" line-rate="0" branch-rate="0" complexity="1">
+      <classes>
+        <class name="RpHaven\Games\System\Exception\SystemNameCannotBeEmpty" filename="Games/System/Exception/SystemNameCannotBeEmpty.php" line-rate="0" branch-rate="0" complexity="1">
+          <methods>
+            <method name="__construct" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="13" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Table.php" line-rate="0.45833333333333" branch-rate="0.35294117647059" complexity="11">
+      <classes>
+        <class name="RpHaven\Games\Table" filename="Games/Table.php" line-rate="0.45833333333333" branch-rate="0.35294117647059" complexity="11">
+          <methods>
+            <method name="set" signature="string $name, RpHaven\Games\Meet\Duration $lifetime, RpHaven\Games\Branch\Space $space" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="2"/>
+                <line number="26" hits="2"/>
+                <line number="27" hits="2"/>
+                <line number="28" hits="2"/>
+                <line number="29" hits="2"/>
+              </lines>
+            </method>
+            <method name="__construct" signature="string $name, RpHaven\Games\Meet\Duration $lifetime, RpHaven\Games\Branch\Space $space, RpHaven\Games\Game $games" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="37" hits="2"/>
+                <line number="38" hits="2"/>
+              </lines>
+            </method>
+            <method name="toString" signature="" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="43" hits="1"/>
+              </lines>
+            </method>
+            <method name="add" signature="RpHaven\Games\Game $games" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="49" hits="0"/>
+                <line number="50" hits="0"/>
+                <line number="51" hits="0"/>
+                <line number="52" hits="0"/>
+                <line number="53" hits="0"/>
+                <line number="54" hits="0"/>
+              </lines>
+            </method>
+            <method name="games" signature="" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="60" hits="0"/>
+                <line number="61" hits="0"/>
+              </lines>
+            </method>
+            <method name="count" signature="" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="67" hits="1"/>
+              </lines>
+            </method>
+            <method name="sort" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="72" hits="0"/>
+                <line number="73" hits="0"/>
+                <line number="74" hits="0"/>
+              </lines>
+            </method>
+            <method name="assertValidGames" signature="" line-rate="0.5" branch-rate="0.28571428571429" complexity="3">
+              <lines>
+                <line number="79" hits="2"/>
+                <line number="80" hits="2"/>
+                <line number="81" hits="0"/>
+                <line number="82" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="2"/>
+            <line number="26" hits="2"/>
+            <line number="27" hits="2"/>
+            <line number="28" hits="2"/>
+            <line number="29" hits="2"/>
+            <line number="37" hits="2"/>
+            <line number="38" hits="2"/>
+            <line number="43" hits="1"/>
+            <line number="49" hits="0"/>
+            <line number="50" hits="0"/>
+            <line number="51" hits="0"/>
+            <line number="52" hits="0"/>
+            <line number="53" hits="0"/>
+            <line number="54" hits="0"/>
+            <line number="60" hits="0"/>
+            <line number="61" hits="0"/>
+            <line number="67" hits="1"/>
+            <line number="72" hits="0"/>
+            <line number="73" hits="0"/>
+            <line number="74" hits="0"/>
+            <line number="79" hits="2"/>
+            <line number="80" hits="2"/>
+            <line number="81" hits="0"/>
+            <line number="82" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Games/Traits/ToString.php" line-rate="1" branch-rate="1" complexity="1">
+      <classes>
+        <class name="RpHaven\Games\Traits\ToString" filename="Games/Traits/ToString.php" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="__toString" signature="" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Infra/CommandBus/SymfonyCommandBus.php" line-rate="0" branch-rate="0" complexity="2">
+      <classes>
+        <class name="Infra\CommandBus\SymfonyCommandBus" filename="Infra/CommandBus/SymfonyCommandBus.php" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="__construct" signature="Symfony\Component\Messenger\MessageBusInterface $messageBus" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="21" hits="0"/>
+              </lines>
+            </method>
+            <method name="handle" signature="App\Command $command" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="26" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="0"/>
+            <line number="26" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Infra/Factory/CampaignFactory.php" line-rate="0" branch-rate="0" complexity="3">
+      <classes>
+        <class name="Infra\Factory\CampaignFactory" filename="Infra/Factory/CampaignFactory.php" line-rate="0" branch-rate="0" complexity="3">
+          <methods>
+            <method name="meets" signature="RpHaven\Games\Meet $meets" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="16" hits="0"/>
+              </lines>
+            </method>
+            <method name="createMeetSessions" signature="RpHaven\Games\Meet $meets" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="21" hits="0"/>
+                <line number="22" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="0"/>
+            <line number="21" hits="0"/>
+            <line number="22" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Infra/Factory/GameFactory.php" line-rate="0" branch-rate="0" complexity="2">
+      <classes>
+        <class name="Infra\Factory\GameFactory" filename="Infra/Factory/GameFactory.php" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="init" signature="\RpHaven\Games\Game\System|string $system, RpHaven\Games\Game\Party\Participant\GamesMaster $gamesMaster, RpHaven\Games\Game\Campaign $campaign" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="17" hits="0"/>
+                <line number="19" hits="0"/>
+                <line number="20" hits="0"/>
+                <line number="21" hits="0"/>
+                <line number="22" hits="0"/>
+                <line number="23" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0"/>
+            <line number="19" hits="0"/>
+            <line number="20" hits="0"/>
+            <line number="21" hits="0"/>
+            <line number="22" hits="0"/>
+            <line number="23" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Infra/Factory/MeetFactory.php" line-rate="1" branch-rate="1" complexity="3">
+      <classes>
+        <class name="Infra\Factory\MeetFactory" filename="Infra/Factory/MeetFactory.php" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="__construct" signature="RpHaven\Games\Branch\Space $space, DateInterval $meetDuration" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="1"/>
+              </lines>
+            </method>
+            <method name="series" signature="DateTimeImmutable $firstMeetStart, DateInterval $seriesInterval, int $numberOfMeets" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="25" hits="1"/>
+                <line number="26" hits="1"/>
+                <line number="27" hits="1"/>
+                <line number="28" hits="1"/>
+                <line number="29" hits="1"/>
+                <line number="32" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="1"/>
+            <line number="25" hits="1"/>
+            <line number="26" hits="1"/>
+            <line number="27" hits="1"/>
+            <line number="28" hits="1"/>
+            <line number="29" hits="1"/>
+            <line number="32" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Infra/Kernel.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="Infra\Kernel" filename="Infra/Kernel.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Infra/Meet/MeetPeriod.php" line-rate="0" branch-rate="0" complexity="5">
+      <classes>
+        <class name="Infra\Meet\MeetPeriod" filename="Infra/Meet/MeetPeriod.php" line-rate="0" branch-rate="0" complexity="5">
+          <methods>
+            <method name="__construct" signature="Shrikeh\DateTime\Period $period, RpHaven\Games\Branch\Space $space" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="20" hits="0"/>
+              </lines>
+            </method>
+            <method name="start" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="25" hits="0"/>
+              </lines>
+            </method>
+            <method name="end" signature="" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="30" hits="0"/>
+              </lines>
+            </method>
+            <method name="repeat" signature="int $days, int $numberOfTimes" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="35" hits="0"/>
+                <line number="38" hits="0"/>
+                <line number="39" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0"/>
+            <line number="25" hits="0"/>
+            <line number="30" hits="0"/>
+            <line number="35" hits="0"/>
+            <line number="38" hits="0"/>
+            <line number="39" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Infra/QueryBus/SymfonyQueryBus.php" line-rate="0" branch-rate="0" complexity="2">
+      <classes>
+        <class name="Infra\QueryBus\SymfonyQueryBus" filename="Infra/QueryBus/SymfonyQueryBus.php" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="__construct" signature="Symfony\Component\Messenger\MessageBusInterface $messageBus" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="20" hits="0"/>
+              </lines>
+            </method>
+            <method name="handle" signature="App\Query $query" line-rate="0" branch-rate="0" complexity="1">
+              <lines>
+                <line number="25" hits="0"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0"/>
+            <line number="25" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

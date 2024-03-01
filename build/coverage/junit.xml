@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/RPHaven/phpunit.xml.dist" tests="4" assertions="4" errors="2" failures="0" skipped="0" time="1.719933">
+    <testsuite name="Games Test Suite" tests="3" assertions="4" errors="2" failures="0" skipped="0" time="1.636225">
+      <testsuite name="Tests\Unit\Games\TableTest" file="/RPHaven/tests/unit/src/Games/TableTest.php" tests="3" assertions="4" errors="2" failures="0" skipped="0" time="1.636225">
+        <testcase name="testItHasAStringableName" file="/RPHaven/tests/unit/src/Games/TableTest.php" line="36" class="Tests\Unit\Games\TableTest" classname="Tests.Unit.Games.TableTest" assertions="3" time="1.167741"/>
+        <testcase name="testItHasGames" file="/RPHaven/tests/unit/src/Games/TableTest.php" line="47" class="Tests\Unit\Games\TableTest" classname="Tests.Unit.Games.TableTest" assertions="1" time="0.380006">
+          <error type="Error">Tests\Unit\Games\TableTest::testItHasGames
+Error: Cannot instantiate interface RpHaven\Games\Meet
+
+/RPHaven/src/Games/Branch/Space/Traits/MeetSeries.php:19
+/RPHaven/src/Infra/Factory/MeetFactory.php:32
+/RPHaven/tests/unit/src/Games/TableTest.php:87
+/RPHaven/tests/unit/src/Games/TableTest.php:57</error>
+        </testcase>
+        <testcase name="testItThrowsAnExceptionIfAGameSessionCollidesWithAnotherGame" file="/RPHaven/tests/unit/src/Games/TableTest.php" line="64" class="Tests\Unit\Games\TableTest" classname="Tests.Unit.Games.TableTest" assertions="0" time="0.088479">
+          <error type="TypeError">Tests\Unit\Games\TableTest::testItThrowsAnExceptionIfAGameSessionCollidesWithAnotherGame
+TypeError: RpHaven\Games\Table::set(): Argument #2 ($lifetime) must be of type RpHaven\Games\Meet\Duration, null given, called in /RPHaven/tests/unit/src/Games/TableTest.php on line 66
+
+/RPHaven/src/Games/Table.php:23
+/RPHaven/tests/unit/src/Games/TableTest.php:66</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Infra Test Suite" tests="1" assertions="0" errors="0" failures="0" skipped="0" time="0.083708">
+      <testsuite name="Tests\Unit\Infra\Meet\MeetPeriodTest" file="/RPHaven/tests/unit/src/Infra/Meet/MeetPeriodTest.php" tests="1" assertions="0" errors="0" failures="0" skipped="0" time="0.083708">
+        <testcase name="testItCanRecur" file="/RPHaven/tests/unit/src/Infra/Meet/MeetPeriodTest.php" line="18" class="Tests\Unit\Infra\Meet\MeetPeriodTest" classname="Tests.Unit.Infra.Meet.MeetPeriodTest" assertions="0" time="0.083708"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
