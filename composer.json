@@ -12,7 +12,7 @@
   "require": {
     "php": ">=8.3",
     "brick/math": "^0.11.0",
-    "doctrine/dbal": "^3.7",
+    "doctrine/dbal": "^3.8",
     "doctrine/doctrine-migrations-bundle": "^3.2",
     "ergebnis/http-method": "^2.4",
     "guzzlehttp/psr7": "^2.6",
@@ -29,16 +29,21 @@
     "symfony/http-foundation": "^6.3",
     "symfony/messenger": "^6.3",
     "symfony/runtime": "^6.3",
-    "symfony/uid": "^6.3",
-    "symfony/yaml": "^6.3"
+    "symfony/uid": "^7.0",
+    "symfony/yaml": "^6.3",
+    "symfony/psr-http-message-bridge": "^7.0",
+    "shrikeh/teapot": "^1.0",
+    "ergebnis/json": "^1.2",
+    "ergebnis/json-printer": "^3.5",
+    "ergebnis/json-normalizer": "^4.5",
+    "amphp/amp": "^3.0",
+    "revolt/event-loop": "^1.0",
+    "monolog/monolog": "^3.5"
   },
   "require-dev": {
-    "shrikeh/php-coding-bible": "^0.1.0",
-    "symfony/phpunit-bridge": "^7.0",
-      "symfony/dotenv": "^7.0",
+    "symfony/phpunit-bridge": "*",
       "behat/behat": "*",
       "ergebnis/composer-normalize": "*",
-      "infection/infection": "*",
       "jangregor/phpstan-prophecy": "*",
       "phpmd/phpmd": "*",
       "phpmetrics/phpmetrics": "*",
@@ -50,17 +55,11 @@
       "phpunit/phpunit": ">=10.0",
       "squizlabs/php_codesniffer": "*",
       "vimeo/psalm": "*",
-      "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2"
+      "dealerdirect/phpcodesniffer-composer-installer": "*"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/shrikeh/php-coding-bible"
-    }
-  ],
   "autoload": {
     "psr-4": {
-      "Api\\": "src/Apsi",
+      "Api\\": "src/Api",
       "App\\": "src/App",
       "Infra\\": "src/Infra",
       "RpHaven\\Games\\": "src/Games"
@@ -68,7 +67,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Tests\\Unit\\": "tests/unit/src"
+      "Tests\\Unit\\": "tests/unit/src",
+      "Tests\\Functional\\": "tests/functional/src"
     }
   },
   "config": {
@@ -106,7 +106,7 @@
         "@composer normalize"
       ],
       "infection": [
-        "@putenv INFE CTION_ALLOW_XDEBUG=1",
+        "@putenv INFECTION_ALLOW_XDEBUG=1",
         "php -d 'xdebug.mode=coverage' vendor/bin/infection -vvv --coverage=build/coverage --show-mutations --threads=8  --min-covered-msi=${MIN_COVERED_MSI:-100} --min-msi=${MIN_MSI:-100}"
       ],
       "install-codestandards": [

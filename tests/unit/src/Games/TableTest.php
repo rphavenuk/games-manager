@@ -63,7 +63,6 @@ final class TableTest extends TestCase
 
     public function testItThrowsAnExceptionIfAGameSessionCollidesWithAnotherGame(): void
     {
-        $lifetime = new Duration(new DateTimeImmutable(),  new DateTimeImmutable('+30 days'));
         $table = Table::set(
             'One-shot Rotation',
             $lifetime,

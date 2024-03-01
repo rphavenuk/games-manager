@@ -1,6 +1,16 @@
 ---
 version: '3.9'
 services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - "./dev/docker/services/nginx/templates:/etc/nginx/templates"
+    networks:
+      default:
+    ports:
+      - target: 80
+        published: 8080
+        protocol: tcp
   games:
     build:
       context: ./
@@ -12,3 +22,45 @@ services:
       GITHUB_TOKEN: "${GITHUB_TOKEN?err}"
     volumes:
       - ./:/RPHaven/
+    networks:
+      default:
+        aliases:
+          - rphaven
+      mysql:
+
+  db:
+    image: mariadb:latest
+    deploy:
+      restart_policy:
+        condition: on-failure
+    environment:
+      - "MARIADB_ROOT_PASSWORD=${MARIA_ROOT_DB_PASS?err}"
+      - "MARIADB_MYSQL_LOCALHOST_USER=yes"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./sql:/var/lib/mysql
+    networks:
+      mysql:
+        aliases:
+          - mysql
+    ports:
+      - target: 3306
+        published: 3306
+        protocol: tcp
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    environment:
+      - 'PMA_HOSTS=db'
+    networks:
+      mysql:
+    ports:
+      - target: 80
+        published: 8082
+        protocol: tcp
+
+networks:
+  default:
+    name: rphaven
+  mysql:
+

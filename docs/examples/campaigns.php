@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use RpHaven\Games\Attendee\Member;
 use RpHaven\Games\Attendee\Pronouns;
-use RpHaven\Games\Branch;
+use RpHaven\Games\Branch\Tables;
 use RpHaven\Games\Branch\Space\Venue;
 use RpHaven\Games\Branch\Space\Venue\Coordinates;
 use RpHaven\Games\Game;
@@ -20,7 +20,7 @@ use RpHaven\Games\Table;
 
 require_once sprintf('%s/vendor/autoload.php', dirname(__DIR__, 2));
 
-$branch = Branch::create('Stratford');
+$branch = Tables::create('Stratford');
 
 $space = new Venue(
     'Escape Bar Stratford',

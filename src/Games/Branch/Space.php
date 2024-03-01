@@ -10,5 +10,5 @@ use JsonSerializable;
 
 interface Space extends JsonSerializable
 {
-    public function series(DateInterval $duration, DateTimeImmutable... $starts): iterable;
+    //public function series(DateInterval $duration, DateTimeImmutable... $starts): iterable;
 }

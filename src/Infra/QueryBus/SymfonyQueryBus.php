@@ -13,7 +13,7 @@ use Symfony\Component\Messenger\MessageBusInterface;
 final class SymfonyQueryBus implements QueryBus
 {
     use HandleTrait {
-        handle as handleCommand;
+        handle as handleQuery;
     }
     public function __construct(MessageBusInterface $messageBus)
     {
@@ -22,6 +22,6 @@ final class SymfonyQueryBus implements QueryBus
 
     public function handle(Query $query): Result
     {
-        return $this->handleCommand($command);
+        return $this->handleQuery($query);
     }
 }
