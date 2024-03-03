@@ -12,9 +12,9 @@ use RpHaven\Games\Branch\Tables;
 final readonly class Async
 {
     public function __construct(
-        private Connection        $connection,
+        private Connection $connection,
         private DateTimeImmutable $dateTime,
-        private Tables            $branch,
+        private string $branch,
     ) {
     }
 

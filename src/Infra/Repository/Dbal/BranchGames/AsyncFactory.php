@@ -17,12 +17,12 @@ final class AsyncFactory
     public function __construct(private readonly Connection $connection)
     {
     }
-    public function futures(DateTimeImmutable $dateTime, Tables ...$branches): array
+    public function futures(DateTimeImmutable $dateTime, string ...$branches): array
     {
         return await($this->createAsync($dateTime, ...$branches));
     }
 
-    private function createAsync(DateTimeImmutable $dateTime, Tables ...$branches): Generator
+    private function createAsync(DateTimeImmutable $dateTime, string ...$branches): Generator
     {
         foreach ($branches as $branch) {
             yield async((new Async($this->connection, $dateTime, $branch))(...));

@@ -36,7 +36,7 @@ final readonly class ActiveGames implements Result
         }
     }
 
-    public function with(Tables $branch, Game ...$games): self
+    public function with(string $branch, Game ...$games): self
     {
         $branchGames = $this->activeGames->copy();
         if (!$branchGames->hasKey($branch)) {

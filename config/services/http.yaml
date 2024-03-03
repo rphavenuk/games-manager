@@ -4,21 +4,6 @@ services:
     autowire: true      # Automatically injects dependencies in your services.
     autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
 
-  _instanceof:
-    Api\Http\Action:
-      tags:
-        - 'controller.service_arguments'
-
-  Api\Http\EventListener\:
-    resource: '../../src/Api/Http/EventListener'
-    tags: [ 'kernel.event_listener' ]
-
-  Symfony\Bridge\PsrHttpMessage\HttpFoundationFactoryInterface: '@Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory'
-  Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory: ~
-  Symfony\Bridge\PsrHttpMessage\HttpMessageFactoryInterface: '@Symfony\Bridge\PsrHttpMessage\Factory\PsrHttpFactory'
-  Symfony\Bridge\PsrHttpMessage\Factory\PsrHttpFactory: ~
-  Symfony\Bridge\PsrHttpMessage\ArgumentValueResolver\PsrServerRequestResolver:
-    tags: ['controller.argument_value_resolver']
 
   Ergebnis\Json\Normalizer\Normalizer: '@Ergebnis\Json\Normalizer\ChainNormalizer'
   Ergebnis\Json\Normalizer\ChainNormalizer:

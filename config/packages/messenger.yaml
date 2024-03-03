@@ -5,8 +5,10 @@ framework:
     # failure_transport: failed
     default_bus: command.bus
     buses:
-      command.bus:
-      query.bus:
+      'command.bus':
+        middleware:
+      'query.bus':
+        middleware:
 
     transports:
     # https://symfony.com/doc/current/messenger.html#transport-configuration

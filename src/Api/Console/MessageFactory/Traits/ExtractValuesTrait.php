@@ -12,16 +12,17 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 trait ExtractValuesTrait
 {
-    private readonly Set $inputs;
 
     private function extractValues(InputInterface $input, OutputInterface $output): Map
     {
         $content = new Map();
         /** @var Input $input */
-        foreach ($this->inputs as $inputValue) {
+        foreach ($this->inputs() as $inputValue) {
             $content = $inputValue->extract($input, $output, $content);
         }
 
         return $content;
     }
+
+    abstract private function inputs(): Set;
 }

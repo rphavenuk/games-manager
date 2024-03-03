@@ -16,9 +16,9 @@ final class SymfonyCommandBus implements CommandBus
     use HandleTrait {
         handle as handleCommand;
     }
-    public function __construct(MessageBusInterface $messageBus)
+    public function __construct(MessageBusInterface $commandBus)
     {
-        $this->messageBus = $messageBus;
+        $this->messageBus = $commandBus;
     }
 
     public function handle(Command $command): Result|null

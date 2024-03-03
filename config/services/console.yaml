@@ -1,24 +1,28 @@
 ---
 services:
+  # default configuration for services in *this* file
   _defaults:
     autowire: true      # Automatically injects dependencies in your services.
     autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+  Api\Console\:
+    resource: '../../src/Api/Console'
 
   _instanceof:
     Api\Console\Action:
       tags:
         - 'console.command'
 
-  Api\Console\:
-    resource: '../../src/Api/Console'
-
   Api\Console\Action\CreateBranch:
     configurator: '@Api\Console\Action\CreateBranch\Configurator'
 
+  Api\Console\Action\ActiveGames:
+    configurator: '@Api\Console\Action\ActiveGames\Configurator'
+
   Api\Console\Input\BranchName:
     tags:
-      - { name: 'api.console.createbranch.input', priority: 100 }
+      - { name: !php/enum Api\Console\Action\InputTags::CREATE_BRANCH->value, priority: 100 }
+      - { name: !php/enum Api\Console\Action\InputTags::LIST_GAMES->value, priority: 100 }
 
   Api\Console\Input\Uri:
     tags:
-      - { name: 'api.console.createbranch.input', priority: 2 }
+      - { name: !php/enum Api\Console\Action\InputTags::CREATE_BRANCH->value, priority: 2 }

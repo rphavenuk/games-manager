@@ -47,7 +47,7 @@
       "jangregor/phpstan-prophecy": "*",
       "phpmd/phpmd": "*",
       "phpmetrics/phpmetrics": "*",
-      "phpspec/prophecy-phpunit": "*",
+      "phpspec/prophecy-phpunit": "^1.0",
       "phpstan/extension-installer": "*",
       "phpstan/phpstan": "*",
       "phpunit/php-code-coverage": "*",

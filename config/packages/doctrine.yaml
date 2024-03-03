@@ -1,10 +1,15 @@
 ---
 parameters:
   'app.db.name':      '%env(string:DB_NAME)%'
+  'app.db.version': '10.11.2-MariaDB'
   'app.db.read.user': '%env(string:DB_READ_USER)%'
   'app.db.read.pass': '%env(string:DB_READ_PASS)%'
   'app.db.read.host': '%env(string:DB_READ_HOST)%'
-  'app.db.version': '10.11.2-MariaDB'
+
+  'app.db.write.user': '%env(string:DB_WRITE_USER)%'
+  'app.db.write.pass': '%env(string:DB_WRITE_PASS)%'
+  'app.db.write.host': '%env(string:DB_WRITE_HOST)%'
+
 
 doctrine:
   dbal:
@@ -19,12 +24,12 @@ doctrine:
 
       command:
         dbname: '%app.db.name%'
-        user: '%app.db.read.user%'
-        password: '%app.db.read.pass%'
-        host: '%app.db.read.host%'
+        user: '%app.db.write.user%'
+        password: '%app.db.write.pass%'
+        host: '%app.db.write.host%'
         server_version: '%app.db.version%'
 
-    profiling_collect_backtrace: '%kernel.debug%'
+      profiling_collect_backtrace: '%kernel.debug%'
     types:
       uuid: Ramsey\Uuid\Doctrine\UuidType
       uuid_binary:  Ramsey\Uuid\Doctrine\UuidBinaryType

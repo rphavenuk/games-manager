@@ -13,8 +13,8 @@ interface ActiveBranchCampaigns
 {
     /**
      * @param DateTimeInterface $dateTime
-     * @param Tables ...$branches
+     * @param string ...$branches
      * @return Generator<Campaign>
      */
-    public function fetchActiveCampaigns(DateTimeInterface $dateTime, Tables ...$branches): Generator;
+    public function fetchActiveCampaigns(DateTimeInterface $dateTime, string ...$branches): Generator;
 }

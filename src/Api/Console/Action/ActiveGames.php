@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Api\Console\Action;
 
-use Api\Console\Action\ActiveGames\ActiveBranchGames;
+use Api\Console\Action\ActiveGames\ActiveGamesQuery;
 use Api\Console\Action\ActiveGames\ActiveGamesFormatter;
 use App\Query\QueryBus;
 use Api\Console\Action;
@@ -21,21 +21,18 @@ final class ActiveGames extends Command implements Action
 {
     public function __construct(
         private readonly QueryBus $queryBus,
-        private readonly ActiveBranchGames $activeBranchGames,
+        private readonly ActiveGamesQuery $activeBranchGames,
         private readonly ActiveGamesFormatter $resultOutputFormatter,
-
     ) {
         parent::__construct();
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $query = $this->activeBranchGames->build($input);
+        $query = $this->activeBranchGames->build($input, $output);
         $result = $this->queryBus->handle($query);
         $this->resultOutputFormatter->format($output, $result);
 
         return Command::SUCCESS;
     }
-
-
 }

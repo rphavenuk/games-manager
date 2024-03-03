@@ -2,37 +2,35 @@
 
 declare(strict_types=1);
 
-namespace Api\Console\Action\CreateBranch;
+namespace Api\Console\Action\ActiveGames;
 
 use Api\Console\Action\InputTags;
 use Api\Console\Input\Keys;
-use Api\Console\MessageFactory\CommandFactory;
+use Api\Console\MessageFactory\QueryFactory;
 use Api\Console\MessageFactory\Traits\ExtractValuesTrait;
 use Api\Console\Traits\InputSet;
-use App\Command\CreateBranch;
+use App\Query\QueryActiveBranchGames;
+use RpHaven\Games\Branch;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\DependencyInjection\Attribute\TaggedIterator;
 
-final readonly class CreateBranchCommand implements CommandFactory
+final readonly class ActiveGamesQuery implements QueryFactory
 {
     use ExtractValuesTrait;
     use InputSet;
 
     public function __construct(
-        #[TaggedIterator(InputTags::CREATE_BRANCH->value)]
+        #[TaggedIterator(InputTags::LIST_GAMES->value)]
         iterable $inputs
     ) {
         $this->setInputs($inputs);
     }
 
-    public function build(InputInterface $input, OutputInterface $output): CreateBranch
+    public function build(InputInterface $input, OutputInterface $output): QueryActiveBranchGames
     {
         $content = $this->extractValues($input, $output);
 
-        return new CreateBranch(
-            $content->get(Keys::BRANCH_NAME),
-            $content->get(Keys::URI)
-        );
+        return new QueryActiveBranchGames(new \DateTimeImmutable(), $content->get(Keys::BRANCH_NAME));
     }
 }

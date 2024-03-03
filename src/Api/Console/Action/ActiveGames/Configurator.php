@@ -4,14 +4,23 @@ declare(strict_types=1);
 
 namespace Api\Console\Action\ActiveGames;
 
+use Api\Console\Action\InputTags;
 use Api\Console\ActionConfigurator;
-use Symfony\Component\Console\Command\Command;
+use Api\Console\ActionConfigurator\Traits\ConfigureCommandDefinition;
+use Api\Console\ActionConfigurator\Traits\SetInputDefinitions;
+use Api\Console\Traits\InputSet;
+use Symfony\Component\DependencyInjection\Attribute\TaggedIterator;
 
 final readonly class Configurator implements ActionConfigurator
 {
+    use InputSet;
+    use ConfigureCommandDefinition;
+    use SetInputDefinitions;
 
-    public function __invoke(Command $command): Command
-    {
-        // TODO: Implement __invoke() method.
+    public function __construct(
+        #[TaggedIterator(InputTags::LIST_GAMES->value)]
+        iterable $inputs
+    ) {
+        $this->setInputs($inputs);
     }
 }

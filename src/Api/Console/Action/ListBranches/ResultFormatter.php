@@ -4,13 +4,11 @@ declare(strict_types=1);
 
 namespace Api\Console\Action\ListBranches;
 
-use Api\Console\Action\ResultOutputFormatter\BranchDetails;
 use Api\Console\ResultOutputFormatter;
+use Api\Console\ResultOutputFormatter\BranchDetails;
 use App\Result;
 use App\Result\CreateBranch;
 use Ds\Map;
-use RpHaven\Games\Branch\Status;
-use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Output\OutputInterface;
 
 final readonly class ResultFormatter implements ResultOutputFormatter

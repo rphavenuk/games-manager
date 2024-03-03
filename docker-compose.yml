@@ -19,7 +19,14 @@ services:
       args:
         GITHUB_TOKEN: "${GITHUB_TOKEN?err}"
     environment:
-      GITHUB_TOKEN: "${GITHUB_TOKEN?err}"
+      - "GITHUB_TOKEN=${GITHUB_TOKEN?err}"
+      - "DB_NAME=${GAMES_DB_NAME?err}"
+      - "DB_READ_USER=rphaven"
+      - "DB_READ_PASS=${GAMES_DB_PASS?err}"
+      - "DB_READ_HOST=db"
+      - "DB_WRITE_USER=root"
+      - "DB_WRITE_PASS=${GAMES_DB_ROOT_DB_PASS?err}"
+      - "DB_WRITE_HOST=db"
     volumes:
       - ./:/RPHaven/
     networks:
@@ -34,11 +41,14 @@ services:
       restart_policy:
         condition: on-failure
     environment:
-      - "MARIADB_ROOT_PASSWORD=${MARIA_ROOT_DB_PASS?err}"
+      - "MARIADB_ROOT_PASSWORD=${GAMES_DB_ROOT_DB_PASS?err}"
       - "MARIADB_MYSQL_LOCALHOST_USER=yes"
+      - "MARIADB_DATABASE=${GAMES_DB_NAME?err}"
+      - "MARIADB_USER=rphaven"
+      - "MARIADB_PASSWORD=${GAMES_DB_PASS?err}"
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ./sql:/var/lib/mysql
+      - ./var/sql:/var/lib/mysql
     networks:
       mysql:
         aliases:

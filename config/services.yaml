@@ -1,7 +1,4 @@
 ---
-imports:
-  - { resource: services/ }
-
 # This file is the entry point to configure your own services.
 # Files in the packages/ subdirectory configure your dependencies.
 
@@ -9,39 +6,55 @@ imports:
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
 
+imports:
+  - { resource: services/ }
+
 services:
-    # default configuration for services in *this* file
-    _defaults:
-        autowire: true      # Automatically injects dependencies in your services.
-        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+  # default configuration for services in *this* file
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+  # this creates a service per class whose id is the fully-qualified class name
+  App\:
+    resource: '../src/App'
+  Infra\:
+    resource: '../src/Infra'
+    exclude:
+      - '../src/Infra/DependencyInjection/'
+      - '../src/Infra/Entity/'
+      - '../src/Infra/Kernel.php'
+  RpHaven\Games\:
+    resource: '../src/Games'
 
-    # makes classes in src/ available to be used as services
-    # this creates a service per class whose id is the fully-qualified class name
 
-    App\:
-        resource: '../src/App'
 
-    App\Command\Handler\:
-      resource: '../src/App/Command/Handler'
+  _instanceof:
+    Api\Http\Action:
       tags:
-        - { name: messenger.message_handler, bus: command.bus }
-
-    App\Query\Handler\:
-      resource: '../src/App/Query/Handler'
+        - 'controller.service_arguments'
+    Infra\Repository\Dbal\Persists:
+      bind:
+        $connection: '@doctrine.dbal.command_connection'
+    Infra\Repository:
       tags:
-        - { name: messenger.message_handler, bus: query.bus }
+        - 'infra.repository'
+    App\Query\QueryHandler:
+      tags:
+        - { name: messenger.message_handler, bus: 'query.bus' }
+    App\Command\CommandHandler:
+      tags:
+        - { name: messenger.message_handler, bus: 'command.bus' }
 
-    Infra\:
-        resource: '../src/Infra'
-        exclude:
-            - '../src/Infra/DependencyInjection/'
-            - '../src/Infra/Entity/'
-            - '../src/Infra/Kernel.php'
 
-    RpHaven\Games\:
-      resource: '../src/Games'
+  Api\Http\EventListener\:
+    resource: '../src/Api/Http/EventListener'
+    tags: [ 'kernel.event_listener' ]
 
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+  Symfony\Bridge\PsrHttpMessage\HttpFoundationFactoryInterface: '@Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory'
+  Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory: ~
+  Symfony\Bridge\PsrHttpMessage\HttpMessageFactoryInterface: '@Symfony\Bridge\PsrHttpMessage\Factory\PsrHttpFactory'
+  Symfony\Bridge\PsrHttpMessage\Factory\PsrHttpFactory: ~
+  Symfony\Bridge\PsrHttpMessage\ArgumentValueResolver\PsrServerRequestResolver:
+    tags: ['controller.argument_value_resolver']
 
 

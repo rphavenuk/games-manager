@@ -17,7 +17,7 @@ use Symfony\Component\Console\Output\OutputInterface;
     name:        'rphaven:branch:list',
     description: 'List branches',
 )]
-final class CreateBranch extends Command implements Action
+final class ListBranches extends Command implements Action
 {
     public function __construct(
         private readonly QueryBus $queryBus,
