@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Api\Console\Action\ListBranches;
 
-use Api\Console\ResultOutputFormatter;
-use Api\Console\ResultOutputFormatter\BranchDetails;
 use App\Result;
 use App\Result\CreateBranch;
+use Api\Console\ResultOutputFormatter;
+use Api\Console\ResultOutputFormatter\BranchDetails;
 use Ds\Map;
 use Symfony\Component\Console\Output\OutputInterface;
 

@@ -9,6 +9,7 @@ use App\Query;
 use App\Query\QueryActiveBranchGames;
 use DateTimeImmutable;
 use Psr\Http\Message\ServerRequestInterface as Request;
+use RpHaven\Games\Branch;
 use RpHaven\Games\Branch\Tables;
 
 final class RequestActiveBranchGamesQueryFactory implements QueryFactory
@@ -16,9 +17,10 @@ final class RequestActiveBranchGamesQueryFactory implements QueryFactory
 
     public function build(Request $request): Query
     {
+
         return new QueryActiveBranchGames(
             $this->getQueryDate($request),
-            Tables::create('stratford'),
+            $request->getAttribute('branch'),
         );
     }
 
@@ -29,14 +31,5 @@ final class RequestActiveBranchGamesQueryFactory implements QueryFactory
         }
 
         return new DateTimeImmutable();
-    }
-
-    private function getQueryBranches(Request $request): array
-    {
-        if ($branches = $request->getAttribute('branches')) {
-            foreach ($branches as $branch) {
-
-            }
-        }
     }
 }

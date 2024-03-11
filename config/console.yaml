@@ -1,0 +1,49 @@
+---
+services:
+  # default configuration for services in *this* file
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+  Api\Console\:
+    resource: '../src/Api/Console'
+
+  _instanceof:
+    Api\Console\Action:
+      tags:
+        - 'api.console.command'
+    Api\Console\Action\Configurated:
+      tags:
+        - 'api.console.command.configured'
+
+  Api\Console\Action\CreateBranch:
+    tags:
+      - { name: 'api.console.command.configured', group: !php/enum Api\Console\Action\InputTags::CREATE_BRANCH->value }
+
+  Api\Console\Action\ActiveGames:
+    configurator: '@Api\Console\Action\ActiveGames\Configurator'
+
+  Api\Console\Action\CreateVenue:
+    configurator: '@Api\Console\Action\CreateVenue\Configurator'
+
+  Api\Console\Input\BranchName:
+    tags:
+      - { name: !php/enum Api\Console\Action\InputTags::CREATE_BRANCH->value, priority: 100 }
+      - { name: !php/enum Api\Console\Action\InputTags::LIST_GAMES->value, priority: 100 }
+
+  Api\Console\Input\Uri:
+    tags:
+      - { name: !php/enum Api\Console\Action\InputTags::CREATE_BRANCH->value, priority: 2 }
+      - { name: !php/enum Api\Console\Action\InputTags::CREATE_VENUE->value, priority: 5 }
+
+  Api\Console\Input\Latitude:
+    tags:
+      - { name: !php/enum Api\Console\Action\InputTags::CREATE_VENUE->value, priority: 2 }
+
+  Api\Console\Input\Longitude:
+    tags:
+      - { name: !php/enum Api\Console\Action\InputTags::CREATE_VENUE->value, priority: 3 }
+
+  Api\Console\Input\SpaceName:
+    tags:
+      - { name: !php/enum Api\Console\Action\InputTags::CREATE_VENUE->value, priority: 5 }

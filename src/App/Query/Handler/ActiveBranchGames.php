@@ -21,11 +21,10 @@ final readonly class ActiveBranchGames implements QueryHandler
             $query->date,
             ... $query->branches(),
         );
-        var_dump($result);
 
-        foreach ($query->branches() as $branch) {
-            $activeGames = $activeGames->with($branch);
-        }
+//        foreach ($result as $game) {
+//            //$activeGames = $activeGames->with($game);
+//        }
 
         return $activeGames;
     }

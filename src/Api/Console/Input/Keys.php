@@ -8,4 +8,9 @@ enum Keys: string
 {
     case URI = 'uri';
     case BRANCH_NAME = 'branchname';
+
+    case SPACE_NAME = 'spacename';
+
+    case LATITUDE = 'latitude';
+    case LONGITUDE = 'longitude';
 }

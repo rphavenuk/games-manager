@@ -6,8 +6,9 @@ namespace Api\Http;
 
 use App\Result;
 use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface;
 
 interface ResponseFormatter
 {
-    public function build(?Result $result = null): Response;
+    public function build(ServerRequestInterface $request, ?Result $result = null): Response;
 }

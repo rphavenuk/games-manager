@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Api\Console\Action\ListBranches;
 
+use App\Query\ListBranches;
 use Api\Console\Action\InputTags;
 use Api\Console\MessageFactory\QueryFactory;
 use Api\Console\MessageFactory\Traits\ExtractValuesTrait;
 use Api\Console\Traits\InputSet;
-use App\Query\ListBranches;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\DependencyInjection\Attribute\TaggedIterator;

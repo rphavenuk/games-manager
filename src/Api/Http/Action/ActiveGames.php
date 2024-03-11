@@ -27,6 +27,6 @@ final readonly class ActiveGames implements Action
         $query = $this->queryFactory->build($request);
         $result = $this->queryBus->handle($query);
 
-        return $this->responseFormatter->build($result);
+        return $this->responseFormatter->build($request, $result);
     }
 }

@@ -6,8 +6,8 @@ namespace Tests\Unit\Traits;
 
 use DateInterval;
 use Infra\Factory\MeetFactory;
-use RpHaven\Games\Branch\Space\Venue;
-use RpHaven\Games\Branch\Space\Venue\Coordinates;
+use RpHaven\Games\Branch\Space\Details\Venue;
+use RpHaven\Games\Branch\Space\Details\Venue\Coordinates;
 
 trait StaticMeetFactory
 {

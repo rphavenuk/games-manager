@@ -8,15 +8,11 @@ enum Tables: string
 {
     case BRANCHES = 'branches';
     case GAMES = 'games';
-
     case SPACES = 'spaces';
-
     case MEETS = 'meets';
-
     case TABLES = 'tables';
-
     case TABLES_MEETS = 'tables_meets';
-
     case CAMPAIGNS = 'campaigns';
     case SESSIONS = 'sessions';
+    case VENUES = 'venues';
 }

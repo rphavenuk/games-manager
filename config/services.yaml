@@ -6,9 +6,6 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
 
-imports:
-  - { resource: services/ }
-
 services:
   # default configuration for services in *this* file
   _defaults:
@@ -17,27 +14,19 @@ services:
   # this creates a service per class whose id is the fully-qualified class name
   App\:
     resource: '../src/App'
+
   Infra\:
     resource: '../src/Infra'
     exclude:
       - '../src/Infra/DependencyInjection/'
       - '../src/Infra/Entity/'
       - '../src/Infra/Kernel.php'
+
   RpHaven\Games\:
     resource: '../src/Games'
 
 
-
   _instanceof:
-    Api\Http\Action:
-      tags:
-        - 'controller.service_arguments'
-    Infra\Repository\Dbal\Persists:
-      bind:
-        $connection: '@doctrine.dbal.command_connection'
-    Infra\Repository:
-      tags:
-        - 'infra.repository'
     App\Query\QueryHandler:
       tags:
         - { name: messenger.message_handler, bus: 'query.bus' }
@@ -45,16 +34,13 @@ services:
       tags:
         - { name: messenger.message_handler, bus: 'command.bus' }
 
+    Infra\Repository\Dbal\Persists:
+      bind:
+        $connection: '@doctrine.dbal.command_connection'
+    Infra\Repository:
+      tags:
+        - 'infra.repository'
 
-  Api\Http\EventListener\:
-    resource: '../src/Api/Http/EventListener'
-    tags: [ 'kernel.event_listener' ]
 
-  Symfony\Bridge\PsrHttpMessage\HttpFoundationFactoryInterface: '@Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory'
-  Symfony\Bridge\PsrHttpMessage\Factory\HttpFoundationFactory: ~
-  Symfony\Bridge\PsrHttpMessage\HttpMessageFactoryInterface: '@Symfony\Bridge\PsrHttpMessage\Factory\PsrHttpFactory'
-  Symfony\Bridge\PsrHttpMessage\Factory\PsrHttpFactory: ~
-  Symfony\Bridge\PsrHttpMessage\ArgumentValueResolver\PsrServerRequestResolver:
-    tags: ['controller.argument_value_resolver']
 
 

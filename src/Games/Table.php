@@ -12,6 +12,7 @@ use RpHaven\Games\Branch\Space;
 use RpHaven\Games\Game\Session;
 use RpHaven\Games\Interface\ToStringable;
 use RpHaven\Games\Meet\Duration;
+use RpHaven\Games\Table\TableId;
 use RpHaven\Games\Traits\ToString;
 
 final readonly class Table implements Countable, ToStringable
@@ -41,6 +42,11 @@ final readonly class Table implements Countable, ToStringable
     public function toString(): string
     {
         return $this->name;
+    }
+
+    public function toId(): TableId
+    {
+        return TableId::create($this);
     }
 
     public function add(Game ...$games): self

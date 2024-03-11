@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Api\Console\Action\CreateBranch;
 
+use App\Command\CreateBranch;
 use Api\Console\Action\InputTags;
 use Api\Console\Input\Keys;
 use Api\Console\MessageFactory\CommandFactory;
 use Api\Console\MessageFactory\Traits\ExtractValuesTrait;
 use Api\Console\Traits\InputSet;
-use App\Command\CreateBranch;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\DependencyInjection\Attribute\TaggedIterator;

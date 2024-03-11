@@ -22,7 +22,7 @@ final class Version20240226231819 extends AbstractMigration
 
     public function up(Schema $schema): void
     {
-        $venues = $schema->createTable('venues');
+        $venues = $schema->createTable(Tables::VENUES->value);
         $venues->addColumn(
             'space',
             UuidBinaryType::NAME

@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Api\Console\Action;
 
+use Api\Console\Action\CreateBranch\ListBranchesCommand;
+use App\Command\CommandBus;
 use Api\Console\Action;
 use Api\Console\Action\CreateBranch\CreateBranchCommand;
-use Api\Console\Action\CreateBranch\ListBranchesCommand;
 use Api\Console\Action\CreateBranch\ResultFormatter;
-use App\Command\CommandBus;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -18,7 +18,7 @@ use Symfony\Component\Console\Output\OutputInterface;
     name:        'rphaven:branch:create',
     description: 'Create a new Branch',
 )]
-final class CreateBranch extends Command implements Action
+final class CreateBranch extends Command implements Configurated
 {
     public function __construct(
         private readonly CommandBus $commandBus,

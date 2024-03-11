@@ -4,11 +4,33 @@ declare(strict_types=1);
 
 namespace RpHaven\Games\Branch;
 
-use DateInterval;
-use DateTimeImmutable;
-use JsonSerializable;
+use Psr\Http\Message\UriInterface;
+use RpHaven\Games\Branch\Space\Details;
+use RpHaven\Games\Branch\Space\SpaceId;
+use RpHaven\Games\Branch\Space\Status;
 
-interface Space extends JsonSerializable
+final readonly class Space
 {
-    //public function series(DateInterval $duration, DateTimeImmutable... $starts): iterable;
+    public static function open(string $name, Details $details, UriInterface $uri): self
+    {
+        return new self(
+            name: $name,
+            details: $details,
+            uri: $uri,
+            status: Status::OPEN,
+        );
+    }
+
+    private function __construct(
+        public string $name,
+        public Details $details,
+        public UriInterface $uri,
+        public Status $status,
+    ) {
+    }
+
+    public function toId(): SpaceId
+    {
+        return SpaceId::create($this);
+    }
 }
